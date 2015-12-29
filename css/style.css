@@ -438,5 +438,11 @@ fieldset .btn {
     border-bottom: 1px solid #e1e6eb;
     vertical-align: middle;
 }
+.ace{
+    vertical-align: middle;
+    margin-right: 4px;
+    width: 14px;
+    height: 14px;
+}
 /*END 表单*/
 
