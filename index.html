@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>威顿印务ERP系统</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="www.kwanson.com">
+    <meta name="version" content="v.1.0.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="position:relative;">
+    <!--侧栏-->
+    <div class="aside">
+        <div class="aside_wrapper">
+            <!-- Logo (200px wide) -->
+            <a href="#"><img class="logo" src="images/logo.png" alt="威顿ERP系统" /></a>
+
+            <ul class="main_nav">  <!-- main Menu -->
+                <li class="coin_1">
+                    <a href="index.html" class="nav_top_item">
+                        <em class="icon">&#xe60b;</em>系统设置
+                    </a>
+                    <ul class="sub_menu hide" id="ud1">
+                        <li><a href="profile.html">个人信息</a></li>
+                        <li><a href="change_pwd.html">密码修改</a></li>
+                    </ul>
+                </li>
+
+                <li class="coin_2">
+                    <a href="#" class="nav_top_item" >
+                        <em class="icon">&#xe604;</em>账号管理
+                    </a>
+                    <ul class="sub_menu hide" id="ud2">
+                        <li><a href="#">新增部门</a></li>
+                        <li><a href="#">部门列表</a></li>
+                        <li><a href="#">新增角色</a></li>
+                        <li><a href="#">角色列表</a></li>
+                        <li><a href="#">新增员工</a></li>
+                        <li><a href="#">员工列表</a></li>
+                    </ul>
+                </li>
+
+                <li class="coin_3">
+                    <a href="#" class="nav_top_item">
+                        <em class="icon">&#xe607;</em>客户管理
+                    </a>
+                    <ul class="sub_menu hide" id="ud3">
+                        <li><a href="#">新增客户</a></li>
+                        <li><a href="#">客户列表</a></li>
+                    </ul>
+                </li>
+
+                <li class="coin_4">
+                    <a href="#" class="nav_top_item">
+                        <em class="icon">&#xe605;</em>报价单
+                    </a>
+                    <ul class="sub_menu hide" id="ud4">
+                        <li><a href="#">报价单录入</a></li>
+                        <li><a href="#">报价单列表</a></li>
+                    </ul>
+                </li>
+
+                <li class="coin_5">
+                    <a href="#" class="nav_top_item">
+                        <em class="icon">&#xe603;</em>生产单
+                    </a>
+                    <ul class="sub_menu hide" id="ud5">
+                        <li><a href="#">生产单录入</a></li>
+                        <li><a href="#">生产单列表</a></li>
+                        <li><a href="#">生产单工序</a></li>
+                        <li><a href="#">生产单库存录入</a></li>
+                    </ul>
+                </li>
+
+                <li class="coin_6">
+                    <a href="#" class="nav_top_item">
+                        <em class="icon">&#xe606;</em>发货单
+                    </a>
+                    <ul class="sub_menu hide" id="ud6">
+                        <li><a href="#">发货通知单录入</a></li>
+                        <li><a href="#">发货通知单列表</a></li>
+                        <li><a href="#">发货单列表</a></li>
+                    </ul>
+                </li>
+
+                <li class="coin_7">
+                    <a href="#" class="nav_top_item">
+                        <em class="icon">&#xe60a;</em>供应商管理
+                    </a>
+                    <ul class="sub_menu hide" id="ud7">
+                        <li><a href="#">新增供应商</a></li>
+                        <li><a href="#">供应商列表</a></li>
+                        <li><a href="#">新增原材料</a></li>
+                        <li><a href="#">原材料列表</a></li>
+                    </ul>
+                </li>
+
+                <li class="coin_8">
+                    <a href="#" class="nav_top_item">
+                        <em class="icon">&#xe602;</em>采购单
+                    </a>
+                    <ul class="sub_menu hide" id="ud8">
+                        <li><a href="#">采购单录入</a></li>
+                        <li><a href="#">采购单列表</a></li>
+                        <li><a href="#">采购价格录入</a></li>
+                    </ul>
+                </li>
+
+                <li class="coin_9">
+                    <a href="#" class="nav_top_item">
+                        <em class="icon">&#xe609;</em>物控管理
+                    </a>
+                    <ul class="sub_menu hide" id="ud9">
+                        <li><a href="#">新增仓库</a></li>
+                        <li><a href="#">仓库列表</a></li>
+                        <li><a href="#">仓库调整</a></li>
+                        <li><a href="#">物料领取表录入</a></li>
+                    </ul>
+                </li>
+
+                <li class="coin_10">
+                    <a href="#" class="nav_top_item">
+                        <em class="icon">&#xe608;</em>财务管理
+                    </a>
+                    <ul class="sub_menu hide" id="ud10">
+                        <li><a href="#">日报表</a></li>
+                        <li><a href="#">月报表</a></li>
+                        <li><a href="#">年报表</a></li>
+                    </ul>
+                </li>
+
+            </ul> <!-- End #main-nav -->
+        </div>
+    </div>
+    <!--END 侧栏-->
+    <!-- main -->
+    <div class="main">
+       <!--顶部top_bar-->
+        <div class="top_bar">
+            <div class="top_bar_inner fr">
+                <div class="logout">
+                    <a href="javascript:;" title="退出">
+                        <i class="icon">&#xe60c;</i>
+                        退出
+                    </a>
+                </div>
+                <div class="welcome">
+                    <span class="fr">业务部 隔壁老王</span>
+                    <img class="fr" src="images/avatar.jpg" alt="隔壁老王" />
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--END 顶部top_bar-->
+
+        <!--content-->
+        <div class="content">
+            <!--首页-->
+            <div class="index">
+                <div class="box">
+                    <div class="box_t">
+                        <h3>消息中心</h3>
+                    </div>
+                    <div class="box_c">
+                        <div class="box_c_l fl">
+                            <h4>系统提醒</h4>
+                            <a href="javascript:;" title="你有10条系统提醒">
+                                <i class="icon" style="color: #fe942d;font-size: 25px;">&#xe60e;</i>
+                                +10
+                                <em class="icon">&#xe60f;</em>
+                            </a>
+                        </div>
+                        <div class="box_c_m fl">
+                            <h4>消息提醒</h4>
+                            <a href="javascript:;" title="你有10条消息提醒">
+                                <i class="icon" style="color: #14aae9;font-size: 25px;">&#xe60d;</i>
+                                +10
+                                <em class="icon">&#xe60f;</em>
+                            </a>
+                        </div>
+                        <div class="box_c_r fl">
+                            <dl>
+                                <dt>上次登录时间为：</dt>
+                                <dd>2015/12/25 12:03:01</dd>
+                            </dl>
+                            <dl>
+                                <dt>本次登录时间为：</dt>
+                                <dd>2015/12/28 12:03:01</dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_t">
+                        <h3>月订单总量</h3>
+                    </div>
+                    <div class="box_c">
+                        <div id="charts_box" style="min-width:700px;width:1059px;height:400px"></div>
+                    </div>
+                </div>
+            </div>
+            <!--END 首页-->
+        </div>
+        <!--END content-->
+    </div>
+    <!-- END main -->
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            menu1("#ud1", "#ud1 a", ".coin_1 a.nav_top_item");
+        })
+    </script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#charts_box').highcharts({
+                chart: {
+                    type: 'line'
+                },
+                title: {
+                    text: '月订单总量'
+                },
+                subtitle: {
+                    text: 'Source: KWANSON.com'
+                },
+                xAxis: {
+                    categories: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+                },
+                yAxis: {
+                    title: {
+                        text: '单位：百万'
+                    }
+                },
+                tooltip: {
+                    enabled: false,
+                    formatter: function() {
+                        return '<b>'+ this.series.name +'</b><br/>'+this.x +': '+ this.y +'°C';
+                    }
+                },
+                plotOptions: {
+                    line: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        enableMouseTracking: false
+                    }
+                },
+                series: [{
+                    name: '2014年',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                }, {
+                    name: '2015年',
+                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+                }]
+            });
+        });
+        /**
+         * Dark theme for Highcharts JS
+         * @author Torstein Honsi
+         */
+
+// Load the fonts
+        Highcharts.createElement('link', {
+            href: 'http://fonts.useso.com/css?family=Unica+One',
+            rel: 'stylesheet',
+            type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+            colors: ["#2b908f", "#90ee7e", "#f45b5b", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
+                "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+            chart: {
+                backgroundColor: {
+                    linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+                    stops: [
+                        [0, '#353b4b'],
+                        [1, '#3b404c']
+                    ]
+                },
+                style: {
+                    fontFamily: "'Unica One', sans-serif"
+                },
+                plotBorderColor: '#606063'
+            },
+            title: {
+                style: {
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase',
+                    fontSize: '20px'
+                }
+            },
+            subtitle: {
+                style: {
+                    color: '#E0E0E3',
+                    textTransform: 'uppercase'
+                }
+            },
+            xAxis: {
+                gridLineColor: '#707073',
+                labels: {
+                    style: {
+                        color: '#E0E0E3'
+                    }
+                },
+                lineColor: '#707073',
+                minorGridLineColor: '#505053',
+                tickColor: '#707073',
+                title: {
+                    style: {
+                        color: '#A0A0A3'
+
+                    }
+                }
+            },
+            yAxis: {
+                gridLineColor: '#707073',
+                labels: {
+                    style: {
+                        color: '#E0E0E3'
+                    }
+                },
+                lineColor: '#707073',
+                minorGridLineColor: '#505053',
+                tickColor: '#707073',
+                tickWidth: 1,
+                title: {
+                    style: {
+                        color: '#A0A0A3'
+                    }
+                }
+            },
+            tooltip: {
+                backgroundColor: 'rgba(0, 0, 0, 0.85)',
+                style: {
+                    color: '#F0F0F0'
+                }
+            },
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        color: '#B0B0B3'
+                    },
+                    marker: {
+                        lineColor: '#333'
+                    }
+                },
+                boxplot: {
+                    fillColor: '#505053'
+                },
+                candlestick: {
+                    lineColor: 'white'
+                },
+                errorbar: {
+                    color: 'white'
+                }
+            },
+            legend: {
+                itemStyle: {
+                    color: '#E0E0E3'
+                },
+                itemHoverStyle: {
+                    color: '#FFF'
+                },
+                itemHiddenStyle: {
+                    color: '#606063'
+                }
+            },
+            credits: {
+                style: {
+                    color: '#666'
+                }
+            },
+            labels: {
+                style: {
+                    color: '#707073'
+                }
+            },
+
+            drilldown: {
+                activeAxisLabelStyle: {
+                    color: '#F0F0F3'
+                },
+                activeDataLabelStyle: {
+                    color: '#F0F0F3'
+                }
+            },
+
+            navigation: {
+                buttonOptions: {
+                    symbolStroke: '#DDDDDD',
+                    theme: {
+                        fill: '#505053'
+                    }
+                }
+            },
+
+            // scroll charts
+            rangeSelector: {
+                buttonTheme: {
+                    fill: '#505053',
+                    stroke: '#000000',
+                    style: {
+                        color: '#CCC'
+                    },
+                    states: {
+                        hover: {
+                            fill: '#707073',
+                            stroke: '#000000',
+                            style: {
+                                color: 'white'
+                            }
+                        },
+                        select: {
+                            fill: '#000003',
+                            stroke: '#000000',
+                            style: {
+                                color: 'white'
+                            }
+                        }
+                    }
+                },
+                inputBoxBorderColor: '#505053',
+                inputStyle: {
+                    backgroundColor: '#333',
+                    color: 'silver'
+                },
+                labelStyle: {
+                    color: 'silver'
+                }
+            },
+
+            navigator: {
+                handles: {
+                    backgroundColor: '#666',
+                    borderColor: '#AAA'
+                },
+                outlineColor: '#CCC',
+                maskFill: 'rgba(255,255,255,0.1)',
+                series: {
+                    color: '#7798BF',
+                    lineColor: '#A6C7ED'
+                },
+                xAxis: {
+                    gridLineColor: '#505053'
+                }
+            },
+
+            scrollbar: {
+                barBackgroundColor: '#808083',
+                barBorderColor: '#808083',
+                buttonArrowColor: '#CCC',
+                buttonBackgroundColor: '#606063',
+                buttonBorderColor: '#606063',
+                rifleColor: '#FFF',
+                trackBackgroundColor: '#404043',
+                trackBorderColor: '#404043'
+            },
+
+            // special colors for some of the
+            legendBackgroundColor: 'rgba(0, 0, 0, 0.5)',
+            background2: '#505053',
+            dataLabelsColor: '#B0B0B3',
+            textColor: '#C0C0C0',
+            contrastTextColor: '#F0F0F3',
+            maskColor: 'rgba(255,255,255,0.3)'
+        };
+
+        // Apply the theme
+        Highcharts.setOptions(Highcharts.theme);
+    </script>
+</body>
+</html>
