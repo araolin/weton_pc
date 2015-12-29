@@ -40,6 +40,9 @@ button, input, select, textarea {
 .w300 {
     width: 300px !important;
 }
+.text-right {
+    text-align: right;
+}
 /*谷歌*/
 input:-webkit-autofill {
     background-color:#fff;
@@ -280,7 +283,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 .box_t h3{
     color: #78cc40;
     line-height: 40px;
-    margin-left: 30px;
+    margin-left: 12px;
     padding:0 8px;
     font-size: 16px;
     display: inline-block;
@@ -405,3 +408,27 @@ fieldset .btn {
     color: #353b4b;
 }
 /*END 账号管理*/
+
+/*表单*/
+.table {
+    color: #666;
+    background: #FFF;
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.table thead tr th {
+    padding: 12px 18px;
+    font-weight: normal;
+    color: #78cc40;
+    border-bottom: 1px solid #25293d;
+    background-color: #353b4b;
+}
+.table tbody tr td {
+    padding: 12px 18px;
+    border-top: 0px;
+    border-bottom: 1px solid #e1e6eb;
+    vertical-align: middle;
+}
+/*END 表单*/
+
