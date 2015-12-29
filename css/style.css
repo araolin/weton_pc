@@ -40,6 +40,9 @@ button, input, select, textarea {
 .w300 {
     width: 300px !important;
 }
+.w150 {
+    width: 150px !important;
+}
 .text-right {
     text-align: right;
 }
@@ -359,6 +362,11 @@ fieldset input.text_input,fieldset select, fieldset textarea {
     background: #fff url('../images/bg-form-field.gif') top left repeat-x;
     border: 1px solid #d5d5d5;
     color: #333;
+}
+fieldset select {
+    padding: 5px;
+    background: #fff;
+    line-height: 30px;
 }
 fieldset .btn {
     font-size: 12px;

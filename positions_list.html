@@ -38,10 +38,10 @@
                 <ul class="sub_menu hide" id="ud2">
                     <li><a href="add_dept.html">新增部门</a></li>
                     <li><a href="dept_list.html">部门列表</a></li>
-                    <li><a href="#">新增职位</a></li>
-                    <li><a href="#">职位列表</a></li>
-                    <li><a href="#">新增员工</a></li>
-                    <li><a href="#">员工列表</a></li>
+                    <li><a href="positions.html">新增职位</a></li>
+                    <li><a href="positions_list.html">职位列表</a></li>
+                    <li><a href="add_staff.html">新增员工</a></li>
+                    <li><a href="staff_list.html">员工列表</a></li>
                 </ul>
             </li>
 
@@ -161,30 +161,54 @@
 
     <!--content-->
     <div class="content">
-        <!--新增部门-->
-        <div class="add_dept">
+        <!--职位列表-->
+        <div class="positions_list">
             <div class="box">
-                <div class="box_t">
-                    <h3>新增部门</h3>
+                <div class="box_t box_t_bottom">
+                    <h3>职位列表</h3>
                 </div>
-                <div class="box_c">
-                    <form action="add_dept.html" method="post">
-                        <fieldset>
-                            <p>
-                                <label class="l_title">部门：</label>
-                                <input class="text_input w300" type="text" name="dept_name" placeholder="请输入部门名称，如业务部" minlength="11">
-                            </p>
-                            <p>
-                                <label class="l_title"></label>
-                                <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel">取消</a>
-                            </p>
-                        </fieldset>
-                    </form>
+                <div class="box_c box_c_reset">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>职位名称</th>
+                            <th>所属部门</th>
+                            <th class="text-right">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>业务经理</td>
+                            <td>业务部</td>
+                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>业务跟单</td>
+                            <td>业务部</td>
+                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>采购经理</td>
+                            <td>采购部</td>
+                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>会计</td>
+                            <td>财务部</td>
+                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <!--END 新增部门-->
+        <!--END 职位列表-->
     </div>
     <!--END content-->
 </div>
@@ -194,15 +218,6 @@
     $(function () {
         menu1("#ud2", "#ud2 a", ".coin_2 a.nav_top_item");
     })
-</script>
-<script type="text/javascript" src="layer/layer.js"></script>
-<script type="text/javascript">
-    $(".btn_commit").bind("click",function(){
-        layer.msg('新增部门已保存', {
-            time: 0 //不自动关闭
-            ,btn: ['继续添加', '查看列表']
-        });
-    });
 </script>
 </body>
 </html>
