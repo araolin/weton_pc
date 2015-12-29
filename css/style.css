@@ -43,6 +43,9 @@ button, input, select, textarea {
 .w150 {
     width: 150px !important;
 }
+.w80{
+    width: 80px !important;
+}
 .text-right {
     text-align: right;
 }
@@ -391,7 +394,7 @@ fieldset .btn {
 }
 /*END 表单*/
 
-/*账号管理*/
+/*账号管理和客户管理*/
 .users .box div{
     margin-top: 40px;
     float: left;
@@ -406,13 +409,14 @@ fieldset .btn {
     font-size: 60px;
 }
 .users .users-item a{
+    display: block;
     color: #353b4b;
+    margin-bottom: 18px;
 }
 .users .users-item a:hover{
     color: #78cc40;
 }
 .users .users-item p{
-    margin-top: 15px;
     color: #353b4b;
 }
 /*END 账号管理*/
