@@ -165,27 +165,36 @@
         <div class="users crm">
             <div class="box">
                 <div class="users-item">
-                    <a href="javascript:;" title="新增客户"><i class="icon">&#xe616;</i></a>
+                    <a href="add_customer.html" title="新增客户"><i class="icon">&#xe616;</i></a>
                     <p>新增客户</p>
                 </div>
                 <div class="users-arrow">
                     <i class="icon">&#xe611;</i>
                 </div>
                 <div class="users-item">
-                    <a href="javascript:;" title="客户列表"><i class="icon">&#xe614;</i></a>
+                    <a href="customer_list.html" title="客户列表"><i class="icon">&#xe614;</i></a>
                     <p>客户列表</p>
                 </div>
                 <div class="users-arrow">
                     <i class="icon">&#xe611;</i>
                 </div>
                 <div class="users-item">
-                    <a href="javascript:;" title="报价单、生产单和发货单"><i class="icon">&#xe615;</i></a>
+                    <a class="crm_btn" title="报价单、生产单和发货单"><i class="icon">&#xe615;</i></a>
                     <p>报价单</p>
                     <p>生产单</p>
                     <p>发货单</p>
                 </div>
                 <div class="clear"></div>
             </div>
+            <!--弹窗-->
+            <div class="layer_tips hide">
+                <h3>请选择</h3>
+                <p>
+                    <a class="btn_layer" href="add_customer.html">报价单</a><a class="btn_layer" href="add_customer.html">生产单</a><a class="btn_layer" href="customer_list.html">发货单</a>
+                <div class="clear"></div>
+                </p>
+            </div>
+            <!--END 弹窗-->
         </div>
         <!--END 客户管理-->
     </div>
@@ -198,6 +207,17 @@
         menu1("#ud3", "#ud3 a", ".coin_3 a.nav_top_item");
     })
 </script>
-
+<script type="text/javascript" src="layer/layer.js"></script>
+<script type="text/javascript">
+    $(".crm_btn").bind("click",function(){
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            shadeClose: true,
+            content: $(".layer_tips")
+        });
+    });
+</script>
 </body>
 </html>

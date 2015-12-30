@@ -182,6 +182,15 @@
                     </form>
                     <div class="clear"></div>
                 </div>
+                <!--弹窗-->
+                <div class="layer_tips hide">
+                    <h3>新增部门已保存</h3>
+                    <p>
+                        <a class="btn_layer" href="add_dept.html">继续添加</a><a class="btn_layer" href="dept_list.html">查看列表</a>
+                        <div class="clear"></div>
+                    </p>
+                </div>
+                <!--END 弹窗-->
             </div>
         </div>
         <!--END 新增部门-->
@@ -198,9 +207,12 @@
 <script type="text/javascript" src="layer/layer.js"></script>
 <script type="text/javascript">
     $(".btn_commit").bind("click",function(){
-        layer.msg('新增部门已保存', {
-            time: 0 //不自动关闭
-            ,btn: ['继续添加', '查看列表']
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            shadeClose: true,
+            content: $(".layer_tips")
         });
     });
 </script>

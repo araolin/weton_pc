@@ -371,11 +371,11 @@ fieldset select {
     background: #fff;
     line-height: 30px;
 }
-fieldset .btn {
+.btn {
     font-size: 12px;
     display: inline-block;
     font-weight: normal;
-    padding: 0 18px;
+    padding: 0 20px;
     height: 32px;
     line-height: 30px;
     text-align: center;
@@ -392,8 +392,50 @@ fieldset .btn {
 .btn_cancel {
     color: #000;
 }
+
 /*END 表单*/
 
+/*layer tips*/
+.layer_tips{
+    min-width: 100px;
+    background-color: #353b4b;
+    color: #fff;
+    border: none;
+}
+.layer_tips h3{
+    position: relative;
+    text-align: center;
+    padding: 12px 25px;
+    line-height: 24px;
+    word-break: break-all;
+    font-size: 14px;
+    overflow: auto;
+}
+.layer_tips p{
+    text-align: right;
+    padding: 0 10px 12px;
+    pointer-events: auto;
+}
+.layer_tips a {
+    height: 28px;
+    line-height: 28px;
+    margin: 0 6px;
+    padding: 0 15px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+}
+.btn_layer{
+    color: #353b4b;
+    border: 1px solid #82838a;
+    background-color: #fff;
+}
+.crm_btn{
+    cursor: pointer;
+}
+/*END layer tips*/
 /*账号管理和客户管理*/
 .users .box div{
     margin-top: 40px;
@@ -418,6 +460,11 @@ fieldset .btn {
 }
 .users .users-item p{
     color: #353b4b;
+}
+.users .box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 820px;
 }
 /*END 账号管理*/
 

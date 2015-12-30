@@ -161,75 +161,51 @@
 
     <!--content-->
     <div class="content">
-        <!--新增客户-->
-        <div class="add_customer">
+        <!--客户列表-->
+        <div class="customer_list">
             <div class="box">
-                <div class="box_t">
-                    <h3>新增客户</h3>
+                <div class="box_t box_t_bottom">
+                    <h3>客户列表</h3>
                 </div>
-                <div class="box_c">
-                    <form action="add_customer.html" method="post">
-                        <fieldset>
-                            <p>
-                                <label class="l_title">公司名称：</label>
-                                <input class="text_input w300" type="text" name="corporate_name" placeholder="请输入公司名称" minlength="11">
-                            </p>
-                            <p>
-                                <label class="l_title">客户姓名：</label>
-                                <input class="text_input w300" type="text" name="customer_name" placeholder="请输入客户姓名" minlength="11">
-                            </p>
-                            <p>
-                                <label class="l_title">所属部门：</label>
-                                <input class="text_input w300" type="text" name="dept_name" placeholder="请输入客户所在部门" minlength="11">
-                            </p>
-                            <p>
-                                <label class="l_title">手机号码：</label>
-                                <input class="text_input w300" type="text" name="customer_phone" placeholder="请输入客户的手机号码" minlength="11">
-                            </p>
-                            <p>
-                                <label class="l_title">座机号码：</label>
-                                <input class="text_input w80" type="text" name="customer_tel" placeholder="区号" minlength="11"> -
-                                <input class="text_input w300" type="text" name="customer_tel" placeholder="座机号码" minlength="11">
-                            </p>
-                            <p class="clear">
-                                <label class="l_title">公司地址：</label>
-                                <select class="w150">
-                                    <option value="option1">省</option>
-                                </select>
-                                <select class="w150">
-                                    <option value="option1">市</option>
-                                </select>
-                                <select class="w150">
-                                    <option value="option1">区</option>
-                                </select>
-                            </p>
-                            <p>
-                                <label class="l_title">&nbsp;</label>
-                                <input class="text_input w300" type="text" name="customer_addr" placeholder="详细地址" minlength="11">
-                            </p>
-                            <p>
-                                <label class="l_title"></label>
-                                <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel">取消</a>
-                            </p>
-                        </fieldset>
-                    </form>
+                <div class="box_c box_c_reset">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>编号</th>
+                                <th>公司名称</th>
+                                <th>客户姓名</th>
+                                <th class="text-right">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>广州君森科技有限公司</td>
+                                <td>郑小姐</td>
+                                <td class="text-right"><a href="#">查看详情</a> | <a href="#">编辑</a> | <a href="#">删除</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>深圳暴走漫画有限公司</td>
+                                <td>王尼玛</td>
+                                <td class="text-right"><a href="#">查看详情</a> | <a href="#">编辑</a> | <a href="#">删除</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>三只松鼠有限公司</td>
+                                <td>松大</td>
+                                <td class="text-right"><a href="#">查看详情</a> | <a href="#">编辑</a> | <a href="#">删除</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <!--END 新增客户-->
+        <!--END 客户列表-->
     </div>
     <!--END content-->
 </div>
-<!--弹窗-->
-<div class="layer_tips hide">
-    <h3>新增部门已保存</h3>
-    <p>
-        <a class="btn_layer" href="add_customer.html">继续添加</a><a class="btn_layer" href="customer_list.html">查看列表</a>
-    <div class="clear"></div>
-    </p>
-</div>
-<!--END 弹窗-->
 <!-- END main -->
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript">
@@ -237,17 +213,6 @@
         menu1("#ud3", "#ud3 a", ".coin_3 a.nav_top_item");
     })
 </script>
-<script type="text/javascript" src="layer/layer.js"></script>
-<script type="text/javascript">
-    $(".btn_commit").bind("click",function(){
-        layer.open({
-            type: 1,
-            title: false,
-            closeBtn: 0,
-            shadeClose: true,
-            content: $(".layer_tips")
-        });
-    });
-</script>
+
 </body>
 </html>
