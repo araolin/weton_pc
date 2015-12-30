@@ -497,3 +497,31 @@ fieldset select {
 }
 /*END 表单*/
 
+/*搜索框*/
+.search_box{
+    height: 26px;
+    margin: 6px 20px;
+}
+.search_box input{
+    font-size: 12px;
+    line-height: 26px;
+    height: 26px;
+    width: 200px;
+    color: #fff;
+    background-color: #353b4b;
+    border: 1px solid #fff;
+    border-right: none;
+    padding-left: 10px;
+}
+.search_box button{
+    font-size: 18px;
+    line-height: 28px;
+    height: 28px;
+    width: 40px;
+    border: 1px solid #fff;
+    background-color: #ccc;
+    color: #78cc40;
+    cursor: pointer;
+}
+
+/*END 搜索框*/
