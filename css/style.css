@@ -37,6 +37,9 @@ button, input, select, textarea {
     margin-right: auto;
     margin-left: auto;
 }
+.w450{
+    width: 450px !important;
+}
 .w300 {
     width: 300px !important;
 }
@@ -296,6 +299,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
     _zoom:1;
     *display:inline;
 }
+.box_t .btn_add{
+    color: #fff;
+    margin: 4px 16px;
+    border: 1px solid #c3e4e2;
+    background-color: #65cdcc;
+}
 .box_t_bottom{
     border-bottom: 2px solid #b2b2b2;
 }
@@ -466,6 +475,9 @@ fieldset select {
     margin-right: auto;
     width: 820px;
 }
+.quotation .box{
+    width: 482px;
+}
 /*END 账号管理*/
 
 /*表单*/
@@ -519,8 +531,8 @@ fieldset select {
     height: 28px;
     width: 40px;
     border: 1px solid #fff;
-    background-color: #ccc;
-    color: #78cc40;
+    background-color: #f4556b;
+    color: #fff;
     cursor: pointer;
 }
 
