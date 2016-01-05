@@ -162,75 +162,73 @@
     <!--content-->
     <div class="content">
         <!--报价单详情-->
-        <div class="add_quotation">
-            <form action="add_quotation.html" method="post">
-                <div class="box">
-                    <div class="box_t">
-                        <h3>报价单录入-客户明细</h3>
-                    </div>
-                    <div class="box_c">
-                        <fieldset>
-                            <p>
-                                <div class="fl">
-                                    <label class="l_title">公司名称：</label>
-                                    <input class="text_input w300" type="text" name="corporate_name" id="corporate_name" placeholder="请输入公司名称" value="广州君森科技有限公司" disabled="disabled">
-                                </div>
-                                <div class="fl">
-                                    <label class="l_title">客户姓名：</label>
-                                    <input class="text_input w300" type="text" name="customer_name" id="customer_name" placeholder="请输入客户姓名" value="王尼玛" disabled="disabled">
-                                </div>
-                                <div class="clear"></div>
-                            </p>
-                        </fieldset>
-                        <div class="clear"></div>
-                    </div>
+        <div class="quotation_detail">
+            <div class="box">
+                <div class="box_t">
+                    <h3>报价单详情-客户明细</h3>
                 </div>
-                <div class="box">
-                    <div class="box_t box_t_bottom">
-                        <h3 class="fl">报价单录入-产品及价格明细</h3>
-                        <button id="quotation_print_button" class="btn btn_add fr" type="button"><i class="icon">&#xe61f;</i>&nbsp;打印预览</button>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="box_c box_c_reset">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>品名</th>
-                                    <th>规格</th>
-                                    <th>定量</th>
-                                    <th>工艺描述</th>
-                                    <th>料价</th>
-                                    <th>烫金</th>
-                                    <th>刀模</th>
-                                    <th>工钱</th>
-                                    <th>丝印</th>
-                                    <th>印刷</th>
-                                    <th>光油</th>
-                                    <th>合计</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>眼霜</td>
-                                    <td>10ml</td>
-                                    <td>10000</td>
-                                    <td>印刷、烫金</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>5</td>
-                                </tr><!-- 最多5行 -->
-                            </tbody>
-                        </table>
-                        <div class="clear"></div>
-                    </div>
+                <div class="box_c">
+                    <fieldset>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">公司名称：</label>
+                                <span class="l_con">广州君森科技有限公司</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">客户姓名：</label>
+                                <span class="l_con">隔壁老王</span>
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                    </fieldset>
+                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-            </form>
+            </div>
+            <div class="box">
+                <div class="box_t box_t_bottom">
+                    <h3 class="fl">报价单详情-产品及价格明细</h3>
+                    <button id="quotation_print_button" class="btn btn_add fr" type="button"><i class="icon">&#xe61f;</i>&nbsp;打印预览</button>
+                    <div class="clear"></div>
+                </div>
+                <div class="box_c box_c_reset">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>品名</th>
+                                <th>规格</th>
+                                <th>定量</th>
+                                <th>工艺描述</th>
+                                <th>料价</th>
+                                <th>烫金</th>
+                                <th>刀模</th>
+                                <th>工钱</th>
+                                <th>丝印</th>
+                                <th>印刷</th>
+                                <th>光油</th>
+                                <th>合计</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>眼霜</td>
+                                <td>10ml</td>
+                                <td>10000</td>
+                                <td>印刷、烫金</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>5</td>
+                            </tr><!-- 最多5行 -->
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
         <!--END 报价单详情-->
     </div>
