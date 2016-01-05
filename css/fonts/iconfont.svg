@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Mon Jan  4 15:09:11 2016
+Created by FontForge 20120731 at Tue Jan  5 09:23:24 2016
  By Ads
 </metadata>
 <defs>
@@ -19,7 +19,7 @@ Created by FontForge 20120731 at Mon Jan  4 15:09:11 2016
     bbox="0 -214.6 1218 896"
     underline-thickness="50"
     underline-position="-100"
-    unicode-range="U+0078-E61E"
+    unicode-range="U+0078-E61F"
   />
 <missing-glyph horiz-adv-x="374" 
 d="M34 0v682h272v-682h-272zM68 34h204v614h-204v-614z" />
@@ -197,5 +197,9 @@ q0 29 22 49.5t55 20.5h473q23 0 40.5 -10t27 -27.5t9.5 -39.5v-19q0 -14 9 -23t23.5 
     <glyph glyph-name="uniE61E" unicode="&#xe61e;" 
 d="M862 297q0 -24 -17 -41t-41 -17h-584q-15 0 -28.5 8t-21.5 21t-8 29v29q0 12 4.5 22.5t12.5 18.5t19 12.5t22 4.5h584q24 0 41 -17t17 -41v-29zM527 661q23 0 40.5 -17t17.5 -41v-583q0 -8 -2.5 -15.5t-6 -14t-9 -11.5t-12 -9t-14 -6t-14.5 -2h-29q-24 0 -41.5 17
 t-17.5 41v583q0 24 17.5 41t41.5 17h29z" />
+    <glyph glyph-name="uniE61F" unicode="&#xe61f;" 
+d="M671 675q0 13 -9 22q-9 8 -21 9h-260q-13 0 -22 -9t-9 -22v-259h321v259zM712 -26q-4 17 -9 34q-5 18 -11 38h-361q-8 -25 -14 -47q-2 -6 -3.5 -12.5t-3 -12.5t-3.5 -12l-8 -24q-2 -7 -3 -15t1 -14q1 -3 3.5 -6t6.5 -5q7 -4 21 -4h36h66h79h79h63h35q23 0 33.5 12t1.5 38
+q-4 12 -9 30zM959 84v1q0 22 -1 43v51v52h-894v-148v-78q0 -13 9 -22q3 -3 6.5 -5t7 -3t7.5 -1h58h20h18h34h28l43 126h431l44 -126h32h29h15h14h68q13 0 22 9q4 5 6.5 10.5t2.5 11.5v63v3v7v6zM202 117.5q-9 -8.5 -21 -8.5t-21 8.5t-9 21.5q0 6 2.5 11.5t6.5 9.5t9.5 6
+t11.5 2q12 0 21 -8t9 -21t-9 -21.5zM959 332v98q0 12 -9 21t-22 9h-71h-6h-125v-95h-430v95q-13 0 -26 -0.5t-26 -0.5h-53h-28h-69q-6 0 -11.5 -2t-9.5 -7q-9 -9 -9 -21v-70v-7v-68h895v40v8z" />
   </font>
 </defs></svg>
