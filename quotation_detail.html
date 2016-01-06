@@ -188,6 +188,22 @@
                 <div class="box_t box_t_bottom">
                     <h3 class="fl">报价单详情-产品及价格明细</h3>
                     <button id="quotation_print_button" class="btn btn_add fr" type="button"><i class="icon">&#xe61f;</i>&nbsp;打印预览</button>
+                    <!-- 打印预览弹窗 -->
+                    <script type="text/javascript" src="layer/layer.js"></script>
+                    <script type="text/javascript">
+                        $("#quotation_print_button").bind("click",function(){
+                            layer.open({
+                                type: 2,
+                                skin: 'layui-layer-rim', //加上边框
+                                area: ['1018px', '480px'], //宽高
+                                title: false,
+                                closeBtn: 1,
+                                shadeClose: true,
+                                content: 'quotation_table.html'
+                            });
+                        });
+                    </script>
+                    <!-- END 打印预览弹窗 -->
                     <div class="clear"></div>
                 </div>
                 <div class="box_c box_c_reset">

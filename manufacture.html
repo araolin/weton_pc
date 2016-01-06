@@ -32,48 +32,50 @@
             </li>
 
             <li class="coin_2">
-                <a href="#" class="nav_top_item" >
+                <a href="users.html" class="nav_top_item" >
                     <em class="icon">&#xe604;</em>账号管理
                 </a>
                 <ul class="sub_menu hide" id="ud2">
                     <li><a href="add_dept.html">新增部门</a></li>
                     <li><a href="dept_list.html">部门列表</a></li>
-                    <li><a href="#">新增职位</a></li>
-                    <li><a href="#">职位列表</a></li>
-                    <li><a href="#">新增员工</a></li>
-                    <li><a href="#">员工列表</a></li>
+                    <li><a href="add_positions.html">新增职位</a></li>
+                    <li><a href="positions_list.html">职位列表</a></li>
+                    <li><a href="add_staff.html">新增员工</a></li>
+                    <li><a href="staff_list.html">员工列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_3">
-                <a href="#" class="nav_top_item">
+                <a href="crm.html" class="nav_top_item">
                     <em class="icon">&#xe607;</em>客户管理
                 </a>
                 <ul class="sub_menu hide" id="ud3">
-                    <li><a href="#">新增客户</a></li>
-                    <li><a href="#">客户列表</a></li>
+                    <li><a href="add_customer.html">新增客户</a></li>
+                    <li><a href="customer_list.html">客户列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_4">
-                <a href="#" class="nav_top_item">
+                <a href="quotation.html" class="nav_top_item">
                     <em class="icon">&#xe605;</em>报价单
                 </a>
                 <ul class="sub_menu hide" id="ud4">
-                    <li><a href="#">报价单录入</a></li>
-                    <li><a href="#">报价单列表</a></li>
+                    <li><a href="add_quotation.html">报价单录入</a></li>
+                    <li><a href="quotation_list.html">报价单列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_5">
-                <a href="#" class="nav_top_item">
+                <a href="manufacture.html" class="nav_top_item">
                     <em class="icon">&#xe603;</em>生产单
                 </a>
                 <ul class="sub_menu hide" id="ud5">
-                    <li><a href="#">生产单录入</a></li>
-                    <li><a href="#">生产单列表</a></li>
-                    <li><a href="#">生产单工序</a></li>
-                    <li><a href="#">生产单库存录入</a></li>
+                    <li><a href="add_manufacture.html">生产单录入</a></li>
+                    <li><a href="manufacture_list.html">生产单列表</a></li>
+                    <li><a href="add_procedure.html">生产单工序录入</a></li>
+                    <li><a href="procedure_list.html">生产单工序列表</a></li>
+                    <li><a href="add_inventory.html">生产单库存录入</a></li>
+                    <li><a href="inventory_list.html">生产单库存列表</a></li>
                 </ul>
             </li>
 
@@ -161,51 +163,50 @@
 
     <!--content-->
     <div class="content">
-        <!--新增部门-->
-        <div class="add_dept">
+        <!--生产单-->
+        <div class="manufacture users">
             <div class="box">
-                <div class="box_t">
-                    <h3>新增部门</h3>
+                <div class="users-item">
+                    <a href="add_manufacture.html" title="生产单录入"><i class="icon">&#xe61b;</i></a>
+                    <p>生产单录入</p>
                 </div>
-                <div class="box_c">
-                    <form action="add_dept.html" method="post">
-                        <fieldset>
-                            <p>
-                                <label class="l_title">部门：</label>
-                                <input class="text_input w300" type="text" name="dept_name" placeholder="请输入部门名称，如业务部" minlength="11">
-                            </p>
-                            <p>
-                                <label class="l_title"></label>
-                                <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel">取消</a>
-                            </p>
-                        </fieldset>
-                    </form>
-                    <div class="clear"></div>
+                <div style="width: 160px;"></div>
+                <div class="users-item">
+                    <a href="add_procedure.html" title="生产单工序录入"><i class="icon">&#xe619;</i></a>
+                    <p>生产单工序录入</p>
                 </div>
-                <!--弹窗-->
-                <div class="layer_tips hide">
-                    <h3>新增部门已保存</h3>
-                    <p>
-                        <a class="btn_layer" href="add_dept.html">继续添加</a><a class="btn_layer" href="dept_list.html">查看列表</a>
-                        <div class="clear"></div>
-                    </p>
+                <div style="width: 160px;"></div>
+                <div class="users-item">
+                    <a href="add_inventory.html" title="生产单库存录入"><i class="icon">&#xe618;</i></a>
+                    <p>生产单库存录入</p>
                 </div>
-                <script type="text/javascript" src="layer/layer.js"></script>
-                <script type="text/javascript">
-                    $(".btn_commit").bind("click",function(){
-                        layer.open({
-                            type: 1,
-                            title: false,
-                            closeBtn: 0,
-                            shadeClose: true,
-                            content: $(".layer_tips")
-                        });
-                    });
-                </script>
-                <!--END 弹窗-->
+                <div class="clear"></div>
+            </div>
+            <div class="box">
+                <div class="users-arrow">
+                    <i class="icon">&#xe620;</i>
+                </div>
+                <div style="width: 160px;"></div>
+                <div class="users-arrow">
+                    <i class="icon">&#xe624;</i>
+                </div>
+                <div style="width: 160px;"></div>
+                <div class="users-arrow">
+                    <i class="icon">&#xe621;</i>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="box">
+                <div style="width: 320px;"></div>
+                <div class="users-item">
+                    <a href="manufacture_list.html" title="生产单列表"><i class="icon">&#xe61a;</i></a>
+                    <p>生产单列表</p>
+                </div>
+                <div style="width: 320px;"></div>
+                <div class="clear"></div>
             </div>
         </div>
-        <!--END 新增部门-->
+        <!--END 生产单-->
     </div>
     <!--END content-->
 </div>
@@ -213,8 +214,9 @@
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript">
     $(function () {
-        menu1("#ud2", "#ud2 a", ".coin_2 a.nav_top_item");
+        menu1("#ud5", "#ud5 a", ".coin_5 a.nav_top_item");
     })
 </script>
+
 </body>
 </html>

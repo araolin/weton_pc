@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>威顿印务ERP系统</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="www.kwanson.com">
+    <meta name="version" content="v.1.0.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/print_table.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="quotation_table" id="quotation_table">
+    <table class="table_inner">
+        <thead>
+            <tr>
+                <th colspan="6">
+                    <div class="quotation_img">
+                        <img src="images/quotation_header.jpg" />
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="6">
+                    <h3>报&nbsp;价&nbsp;单<p>QUOTATION</p></h3>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="4">
+                    客户CLIENT：
+                </th>
+                <th  colspan="2">
+                    有效期VALIDITY：15天/DAY
+                </th>
+            </tr>
+            <tr class="quotation_form_tr">
+                <th class="w230">
+                    品名
+                </th>
+                <th class="w170">
+                    规格
+                </th>
+                <th class="w100">
+                    订量
+                </th>
+                <th class="w230">
+                    工艺描述
+                </th>
+                <th class="w100">
+                    价格
+                </th>
+                <th class="w170">
+                    备注
+                </th>
+            </tr>
+            <tr class="quotation_form_tr">
+                <td class="w230">
+                    品名1
+                </td>
+                <td class="w170">
+                    规格1
+                </td>
+                <td class="w100">
+                    订量1
+                </td>
+                <td class="w230">
+                    工艺描述1
+                </td>
+                <td class="w100">
+                    价格1
+                </td>
+                <td class="w170">
+                    备注1
+                </td>
+            </tr>
+            <tr class="quotation_form_tr">
+                <td class="w230">
+                    品名2
+                </td>
+                <td class="w170">
+                    规格2
+                </td>
+                <td class="w100">
+                    订量2
+                </td>
+                <td class="w230">
+                    工艺描述2
+                </td>
+                <td class="w100">
+                    价格2
+                </td>
+                <td class="w170">
+                    备注2
+                </td>
+            </tr>
+            <tr class="quotation_form_tr">
+                <td class="w230">
+
+                </td>
+                <td class="w170">
+
+                </td>
+                <td class="w100">
+
+                </td>
+                <td class="w230">
+
+                </td>
+                <td class="w100">
+
+                </td>
+                <td class="w170">
+
+                </td>
+            </tr>
+            <tr class="quotation_form_tr">
+                <td class="w230">
+
+                </td>
+                <td class="w170">
+
+                </td>
+                <td class="w100">
+
+                </td>
+                <td class="w230">
+
+                </td>
+                <td class="w100">
+
+                </td>
+                <td class="w170">
+
+                </td>
+            </tr>
+            <tr class="quotation_form_tr">
+                <td class="w230">
+
+                </td>
+                <td class="w170">
+
+                </td>
+                <td class="w100">
+
+                </td>
+                <td class="w230">
+
+                </td>
+                <td class="w100">
+
+                </td>
+                <td class="w170">
+
+                </td>
+            </tr>
+            <tr class="quotation_table_tips">
+                <td colspan="6">
+                    <p> 1. 因系订货生产，实际交货数为订货数的正负5%，请按实际交货数核算付款。</p>
+                    <p>2. 需方对所提供的样品及资料等信息，应保证除供需方外的第三方不得主张任何权利，否则由此构成的对第三方的侵权责任由需方负全部责任。 </p>
+                    <p>3. 报价确认请回传我司（电话：020-86910222； 传真：020-36956789）。</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    报价人(Confirmed by):广州市威顿印务有限公司
+                </td>
+                <td  colspan="3">
+                    客户确认(Confirmed by)：
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    签&nbsp;章(Seal)：
+                </td>
+                <td  colspan="3">
+                    签&nbsp;章(Seal)：
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    日&nbsp;期(Date)：&nbsp;&nbsp;&nbsp;&nbsp;年(Y)&nbsp;&nbsp;月(M)&nbsp;&nbsp;日(D)
+                </td>
+                <td  colspan="3">
+                    日&nbsp;期(Date)：&nbsp;&nbsp;&nbsp;&nbsp;年(Y)&nbsp;&nbsp;月(M)&nbsp;&nbsp;日(D)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="clear"></div>
+    <div class="operate">
+        <button type="button" id="print_button" class="btn"><i class="icon">&#xe61f;</i>&nbsp;打印</button>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#print_button").click(function(){
+        $(".operate").hide();
+        window.print();
+        $(".operate").show();
+    })
+</script>
+</body>
+</html>
