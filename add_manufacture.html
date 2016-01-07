@@ -169,7 +169,7 @@
                 <div class="box_t">
                     <h3>生产单录入</h3>
                 </div>
-                <div class="box_c">
+                <div class="box_c fl" style="width: 600px;">
                     <form action="add_manufacture.html" method="post">
                         <fieldset>
                             <p>
@@ -211,8 +211,42 @@
                                 <input class="text_input w150" type="text" placeholder="请输入订单数量">
                             </p>
                             <p>
-                                <label class="l_title">可接受浮动订单量：</label>
-                                <input class="text_input w150" type="text" placeholder="请输入订单数量">
+                                <div class="fl">
+                                    <label class="l_title">可接受浮动订单量：</label>
+                                    <span class="l_con l_t_mid w40"><i class="icon">&#xe627;</i></span>
+                                    <input class="text_input w40 fl" type="text" placeholder="">
+                                    <span class="l_con l_t_mid w40"><i class="icon">&#xe628;</i></span>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="fl">
+                                    <div class="w40 fl">&nbsp;</div>
+                                    <span class="l_con l_t_mid w40"><i class="icon">&#xe626;</i></span>
+                                    <input class="text_input w40 fl" type="text" placeholder="">
+                                    <span class="l_con l_t_mid w40"><i class="icon">&#xe628;</i></span>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </p>
+                            <p>
+                                <label class="l_title">下单日期：</label>
+                                <input class="text_input w150" type="text" placeholder="请选择下单日期" onClick="laydate({istime: true, format: 'YYYY-MM-DD'})">
+                            </p>
+                            <p>
+                                <label class="l_title">交货日期：</label>
+                                <input class="text_input w150" type="text" placeholder="请选择交货日期" onClick="laydate({istime: true, format: 'YYYY-MM-DD'})">
+                            </p>
+                            <!-- END content -->
+                            <!-- 日历控件 -->
+                            <script type="text/javascript" src="laydate/laydate.js"></script>
+                            <script>
+                                !function(){
+                                    laydate.skin('yalan');//切换皮肤，请查看skins下面皮肤库
+                                }();
+                            </script>
+                            <!-- END 日历控件 -->
+                            <p>
+                                <label class="l_title">交货地点：</label>
+                                <input class="text_input w300" type="text" placeholder="请输入交货地点">
                             </p>
                             <p>
                                 <label class="l_title"></label>
@@ -222,7 +256,395 @@
                     </form>
                     <div class="clear"></div>
                 </div>
+                <div class="box_c fl" style="width: 450px;">
+                    <!--<div class="add_product_img">-->
+                        <!--<i class="icon">&#xe629;</i>-->
+                        <!--<p>添加产品图片</p>-->
+                    <!--</div>-->
+                    <div class="product_img_show">
+                        <img src="images/product.jpg" alt="产品图"/>
+                    </div>
+                </div>
+                <div class="clear"></div>
             </div>
+            <div class="box" id="tabs_box">
+                <div class="box_t">
+                    <div class="tabs">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" id="tab_1" class="hover">
+                                    样板资料
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_2">
+                                    原材料及尺寸要求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_3">
+                                    菲林及印刷要求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_4">
+                                    工序要求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_5">
+                                    包装要求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_6">
+                                    生产备注
+                                </a>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_c" id="tab_c_1">
+                    <fieldset>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">生产样板：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入生产样板数量"><span class="l_con l_t_mid w40">个</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">稿件：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入稿件数量"><span class="l_con l_t_mid w40">件</span>
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">客签OK办：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入客签OK办数量"><span class="l_con l_t_mid w40">个</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">实物：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入实物数量"><span class="l_con l_t_mid w40">个</span>
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">来办：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入来办数量"><span class="l_con l_t_mid w40">个</span>
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <label class="l_title"></label>
+                            <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel next_tab">继续填写</a>
+                        </p>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_2">
+                    <fieldset>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">卡号：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入原材料卡号">
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">成品尺寸：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入成品尺寸">
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">卡种：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入原材料卡种">
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">成品盒数：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入成品盒数">
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">存货：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入原材料存货">
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <label class="l_title"></label>
+                            <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel next_tab">继续填写</a>
+                        </p>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_3">
+                    <fieldset>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">印面/印里：</label>
+                                <select class="w150">
+                                    <option value="option1">印面</option>
+                                    <option value="option2">印里</option>
+                                </select>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">印刷颜色按照：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入对比标准（如新文件、签样指示等）">
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">偏通色号：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入偏通色号">
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">印刷尺寸按照：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入对比标准（如新文件、签样指示等）">
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">菲林用/档案名称：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入菲林用/档案名称">
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">印刷文图按照：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入对比标准（如新文件、签样指示等）">
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <div class="fl">
+                                <label class="l_title">电脑纹：</label>
+                                <input class="text_input w300 fl" type="text" placeholder="请输入电脑纹">
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                        <div class="fl">
+                            <label class="l_title">模用：</label>
+                            <select class="w150 fl" style="margin-right: 10px;">
+                                <option value="option1">新模</option>
+                                <option value="option2">旧模</option>
+                            </select>
+                            <input class="text_input w300 fl" type="text" placeholder="请输入模用">
+                        </div>
+                        <div class="clear"></div>
+                        </p>
+                        <p>
+                            <label class="l_title"></label>
+                            <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel next_tab">继续填写</a>
+                        </p>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_4">
+                    <fieldset>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>工序名称</th>
+                                    <th><input type="checkbox" class="ace">全选</th>
+                                    <th>备注</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>开料</td>
+                                    <td><input type="checkbox" class="ace" checked>选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注"></td>
+                                </tr>
+                                <tr>
+                                    <td>丝印</td>
+                                    <td><input type="checkbox" class="ace">选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注"></td>
+                                </tr>
+                                <tr>
+                                    <td>柯式</td>
+                                    <td><input type="checkbox" class="ace" checked>选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注" value="印刷A"></td>
+                                </tr>
+                                <tr>
+                                    <td>光油</td>
+                                    <td><input type="checkbox" class="ace">选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注"></td>
+                                </tr>
+                                <tr>
+                                    <td>烫金</td>
+                                    <td><input type="checkbox" class="ace" checked>选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注" value="706"></td>
+                                </tr>
+                                <tr>
+                                    <td>单线</td>
+                                    <td><input type="checkbox" class="ace" checked>选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注" value="精细线"></td>
+                                </tr>
+                                <tr>
+                                    <td>双线</td>
+                                    <td><input type="checkbox" class="ace">选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注"></td>
+                                </tr>                                <tr>
+                                    <td>粘盒</td>
+                                    <td><input type="checkbox" class="ace" checked>选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注" value="药水"></td>
+                                </tr>                                <tr>
+                                    <td>拆边</td>
+                                    <td><input type="checkbox" class="ace">选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注"></td>
+                                </tr>                                <tr>
+                                    <td>手工</td>
+                                    <td><input type="checkbox" class="ace">选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注"></td>
+                                </tr>                                <tr>
+                                    <td>天地盒</td>
+                                    <td><input type="checkbox" class="ace">选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注"></td>
+                                </tr>
+                                <tr>
+                                    <td>片花</td>
+                                    <td><input type="checkbox" class="ace">选择</td>
+                                    <td><input class="text_input w300" type="text" placeholder="请输入备注"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <span class="l_con">工序要求：开料-柯式（印刷A）-烫金（706）-单线（精细线）-粘盒（药水）</span>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <label class="l_title"></label>
+                            <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel next_tab">继续填写</a>
+                        </p>
+                        <div class="clear"></div>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_5">
+                    <fieldset>
+                        <p>
+                             <div class="fl">
+                                <label class="l_title">用于食品包装：</label>
+                                <select class="w150">
+                                    <option value="option1">是</option>
+                                    <option value="option2">否</option>
+                                </select>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">俐仔位：</label>
+                                <select class="w150">
+                                    <option value="option1">粘里</option>
+                                    <option value="option2">粘外</option>
+                                </select>
+                            </div>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <label class="l_title">包装：</label>
+                            <span class="radio_inner w150 fl">
+                                <input class="ace" type="radio" name="pack_style">包装方式一：
+                            </span>
+                            <input class="text_input w80 fl" type="text" placeholder="请输入数量">
+                            <span class="l_con l_t_mid w80">个/扎，</span>
+                            <input class="text_input w80 fl" type="text" placeholder="请输入数量">
+                            <span class="l_con l_t_mid w80">条带，</span>
+                            <input class="text_input w80 fl" type="text" placeholder="请输入数量">
+                            <span class="l_con l_t_mid w150">扎收缩，纸质</span>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <label class="l_title">包装：</label>
+                            <span class="radio_inner w150 fl">
+                                <input class="ace" type="radio" name="pack_style">包装方式二：
+                            </span>
+                            <span class="l_con l_t_mid w80">每个卷带</span>
+                            <input class="text_input w80 fl" type="text" placeholder="请输入数量">
+                            <span class="l_con l_t_mid w80">个/扎</span>
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <label class="l_title">包装：</label>
+                            <span class="radio_inner w150 fl">
+                                <input class="ace" type="radio" name="pack_style">其他：
+                            </span>
+                            <input class="text_input w300 fl" type="text" placeholder="请输入其他包装方式">
+                            <div class="clear"></div>
+                        </p>
+                        <p>
+                            <label class="l_title"></label>
+                            <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel next_tab">继续填写</a>
+                        </p>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_6">
+                    <fieldset>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>生产备注：</th>
+                                    <th colspan="2">*&nbsp;留意色牢度需用能通过胶纸测试。</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>*&nbsp;开料</td>
+                                    <td colspan="2">材料要摆平放平整，不要荷叶边，堆放高度不超过1m<br/>要做表面处理，片材达因值38以上，印刷前48H要开料，请小心片花及霉点</td>
+                                </tr>
+                                <tr>
+                                    <td>*&nbsp;印刷</td>
+                                    <td colspan="2">用3M810胶纸进行油墨附着力测试，印刷后片材堆放高度不能超过1m<br/>要够白，一定要清洁好车头才能印白色<br/>电脑纹必须经过测试，能读过C级以上才可以出货，请小心片花及霉点
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>烫</td>
+                                    <td> *&nbsp;热烫 电版用：新电版银纸用指定型号不得有任何变更<br/>*&nbsp;不允许有发白块状现象<br/>*&nbsp;粘银不允许，烫银机器要干净，环境要符合要求<br/>*&nbsp;注意烫金牢度、用3M胶纸测试烫金附着力</td>
+                                    <td> *&nbsp;烫套位误差≦0.2MM<br/>*&nbsp;不可发生漏烫、掉银粉<br/>*&nbsp;边缘要直线，无毛边或残缺，狗牙</td>
+                                </tr>
+                                <tr>
+                                    <td>啤</td>
+                                    <td> *&nbsp;啤双线，线条柔软度为4星<br/>*&nbsp;压力要适当,撕片得以顺畅<br/>*&nbsp;注意爆线、刀线错位、毛刺、压印、片花、霉点等不良</td>
+                                    <td> *&nbsp;啤刀要锋利，不能有毛边<br/>*&nbsp;啤线要平整,套位要准确</td>
+                                </tr>
+                                <tr>
+                                    <td>粘</td>
+                                    <td> *&nbsp;机拖要控制好出片速度，请注意连张；电眼感应（胶盒之间的间距要≧5.0cm<br/>*&nbsp;胶水要均匀，要直， 不能有拉丝粘连<br/>*&nbsp;注意刮花,要轻拿轻放</td>
+                                    <td> *&nbsp;不能有漏胶、漏粘胶、短胶；胶尽量打到头，俐仔两头空位≦2mm<br/>*&nbsp;注意胶水牢度，用拉力计检测，达4磅或以上为合格</td>
+                                </tr>
+                                <tr>
+                                    <td>其他备注</td>
+                                    <td colspan="2"><input class="text_input w300 fl" type="text" placeholder="请输入其他生产备注"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <label class="l_title"></label>
+                            <button class="btn btn_commit" type="button">保存</button>
+                        </p>
+                        <div class="clear"></div>
+                    </fieldset>
+                </div>
+                <div class="mid_btn">
+                    <button class="btn btn_commit" type="button">提交生产单</button>
+                </div>
+            </div>
+            <script type="text/javascript">
+               $("#tabs_box .tabs li").click(function(){
+                   $("#tabs_box .tabs li a").removeClass("hover");
+                   $(this).find("a").addClass("hover");
+                   $("#tabs_box .box_c").hide();
+                   var tabs_index = "#tab_c_"+($(this).index()+1);
+                   $(tabs_index).show();
+               })
+                $(" .next_tab").click(function(){
+                    $("#tabs_box .tabs li a").removeClass("hover");
+                    var next_index = $(this).parent().parent().parent().index()+1;
+                    $("#tab_"+next_index).addClass("hover");
+                    $("#tabs_box .box_c").hide();
+                    $("#tab_c_"+next_index).show();
+                })
+            </script>
         </div>
         <!--END 生产单录入-->
     </div>

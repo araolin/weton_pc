@@ -49,6 +49,12 @@ button, input, select, textarea {
 .w80{
     width: 80px !important;
 }
+.w40{
+    width: 40px !important;
+}
+.w20{
+    width: 20px !important;
+}
 .text-right {
     text-align: right;
 }
@@ -365,6 +371,14 @@ fieldset label.l_title {
     text-align: right;
 }
 fieldset span.l_con{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+fieldset .l_t_mid{
+    text-align: center;
+}
+fieldset .l_t_mid i{
     height: 30px;
     line-height: 30px;
 }
@@ -378,7 +392,11 @@ fieldset input.text_input,fieldset select, fieldset textarea {
 fieldset select {
     padding: 5px;
     background: #fff;
+    height: 30px;
     line-height: 30px;
+}
+fieldset .radio_inner {
+    padding: 5px 8px;
 }
 .btn {
     font-size: 12px;
@@ -401,7 +419,11 @@ fieldset select {
 .btn_cancel {
     color: #000;
 }
-
+.mid_btn{
+    width: 102px;
+    margin: 0 auto;
+    padding: 45px 0 20px;
+}
 /*END 表单*/
 
 /*layer tips*/
@@ -537,3 +559,55 @@ fieldset select {
 }
 
 /*END 搜索框*/
+
+/* 生产单录入 */
+.add_product_img,.product_img_show{
+    cursor: pointer;
+    width: 180px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+}
+.add_product_img{
+    color: #8D8D8D;
+    border: 4px dotted #8D8D8D;
+    text-align: center;
+    font-size: 68px;
+    font-weight: bold;
+}
+.add_product_img i{
+    height: 160px;
+    line-height: 160px;
+}
+.add_product_img p{
+    font-size: 18px;
+    height: 80px;
+}
+.product_img_show img{
+    width: 180px;
+    height: 240px;
+    border: 4px dotted #8D8D8D;
+}
+/*END 生产单录入*/
+
+/*tabs*/
+.box_t .tabs{
+    padding-left: 20px;
+}
+.box_t .tabs li{
+    margin-top:2px;
+    float:left;
+    height: 38px;
+    line-height: 38px;
+}
+.box_t .tabs li a{
+    padding: 0 25px;
+    display: block;
+    color: #fff;
+}
+.box_t .tabs li a.hover{
+    background-color: #fff;
+    color: #78cc40;
+}
+/*END tabs*/
