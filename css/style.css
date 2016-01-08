@@ -530,7 +530,7 @@ fieldset .radio_inner {
     height: 14px;
 }
 .table_scroll{
-    width: 1059px;
+    width: 100%;
     overflow-x: scroll;
 }
 .table_scroll .table{

@@ -32,48 +32,50 @@
             </li>
 
             <li class="coin_2">
-                <a href="#" class="nav_top_item" >
+                <a href="users.html" class="nav_top_item" >
                     <em class="icon">&#xe604;</em>账号管理
                 </a>
                 <ul class="sub_menu hide" id="ud2">
                     <li><a href="add_dept.html">新增部门</a></li>
                     <li><a href="dept_list.html">部门列表</a></li>
-                    <li><a href="#">新增职位</a></li>
-                    <li><a href="#">职位列表</a></li>
-                    <li><a href="#">新增员工</a></li>
-                    <li><a href="#">员工列表</a></li>
+                    <li><a href="add_positions.html">新增职位</a></li>
+                    <li><a href="positions_list.html">职位列表</a></li>
+                    <li><a href="add_staff.html">新增员工</a></li>
+                    <li><a href="staff_list.html">员工列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_3">
-                <a href="#" class="nav_top_item">
+                <a href="crm.html" class="nav_top_item">
                     <em class="icon">&#xe607;</em>客户管理
                 </a>
                 <ul class="sub_menu hide" id="ud3">
-                    <li><a href="#">新增客户</a></li>
-                    <li><a href="#">客户列表</a></li>
+                    <li><a href="add_customer.html">新增客户</a></li>
+                    <li><a href="customer_list.html">客户列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_4">
-                <a href="#" class="nav_top_item">
+                <a href="quotation.html" class="nav_top_item">
                     <em class="icon">&#xe605;</em>报价单
                 </a>
                 <ul class="sub_menu hide" id="ud4">
-                    <li><a href="#">报价单录入</a></li>
-                    <li><a href="#">报价单列表</a></li>
+                    <li><a href="add_quotation.html">报价单录入</a></li>
+                    <li><a href="quotation_list.html">报价单列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_5">
-                <a href="#" class="nav_top_item">
+                <a href="manufacture.html" class="nav_top_item">
                     <em class="icon">&#xe603;</em>生产单
                 </a>
                 <ul class="sub_menu hide" id="ud5">
-                    <li><a href="#">生产单录入</a></li>
-                    <li><a href="#">生产单列表</a></li>
-                    <li><a href="#">生产单工序</a></li>
-                    <li><a href="#">生产单库存录入</a></li>
+                    <li><a href="add_manufacture.html">生产单录入</a></li>
+                    <li><a href="manufacture_list.html">生产单列表</a></li>
+                    <li><a href="add_procedure.html">生产单工序录入</a></li>
+                    <li><a href="procedure_list.html">生产单工序列表</a></li>
+                    <li><a href="add_inventory.html">生产单库存录入</a></li>
+                    <li><a href="inventory_list.html">生产单库存列表</a></li>
                 </ul>
             </li>
 
@@ -161,62 +163,65 @@
 
     <!--content-->
     <div class="content">
-        <!--个人信息-->
-        <div class="profile">
+        <!--发货单-->
+        <div class="delivery users">
             <div class="box">
-                <div class="box_t">
-                    <h3>个人信息</h3>
+                <div class="users-item">
+                    <a href="#" title="发货通知单录入"><i class="icon">&#xe62c;</i></a>
+                    <p>发货通知单录入</p>
                 </div>
-                <div class="box_c">
-                    <form action="profile.html" method="post">
-                        <fieldset>
-                            <p>
-                                <label class="l_title">姓名：</label>
-                                <span class="l_con">隔壁老王</span>
-                                <div class="clear"></div>
-                            </p>
-                            <p class="clear">
-                                <label class="l_title">性别：</label>
-                                <span class="l_con">男</span>
-                                <div class="clear"></div>
-                            </p>
-                            <p class="clear">
-                                <label class="l_title">部门：</label>
-                                <span class="l_con">业务部</span>
-                                <div class="clear"></div>
-                            </p>
-                            <p>
-                                <label class="l_title">职位：</label>
-                                <span class="l_con">业务经理</span>
-                                <div class="clear"></div>
-                            </p>
-                            <p>
-                                <label class="l_title">手机号码：</label>
-                                <input class="text_input w300" type="text" maxlength="11" name="phone" placeholder="请输入手机号码（必填）">
-                            </p>
-                            <p>
-                                <label class="l_title">&nbsp;</label>
-                                <input class="text_input w300" type="text" maxlength="11" name="phone" placeholder="请输入备用手机号码一（选填）">
-                            </p>
-                            <p>
-                                <label class="l_title">&nbsp;</label>
-                                <input class="text_input w300" type="text" maxlength="11" name="phone" placeholder="请输入备用手机号码二（选填）">
-                            </p>
-                            <p>
-                                <label class="l_title">邮箱：</label>
-                                <input class="text_input w300" type="text" name="email" placeholder="请输入常用邮箱地址">
-                            </p>
-                            <p>
-                                <label class="l_title"></label>
-                                <button class="btn btn_commit" type="submit">保存修改</button> &nbsp;<a href="javascript:;" class="btn btn_cancel">取消</a>
-                            </p>
-                        </fieldset>
-                    </form>
-                    <div class="clear"></div>
+                <div class="users-arrow">
+                    <i class="icon">&#xe625;</i>
                 </div>
+                <div class="users-item">
+                    <a href="#" title="发货通知单列表，状态为“待发货”"><i class="icon">&#xe62f;</i></a>
+                    <p>发货通知单列表</p>
+                    <p>状态为“待发货”</p>
+                </div>
+                <div class="users-arrow">
+                    <i class="icon">&#xe625;</i>
+                </div>
+                <div class="users-item">
+                    <a href="#" title="发货通知单列表，状态为“发货中”"><i class="icon">&#xe62e;</i></a>
+                    <p>发货通知单列表</p>
+                    <p>状态为“发货中”</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="box">
+                <div style="width: 480px;"></div>
+                <div class="users-arrow">
+                    <i class="icon">&#xe621;</i>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="box">
+                <div class="users-item">
+                    <a href="#" title="财务凭签单确认，状态为“已收货”"><i class="icon">&#xe62a;</i></a>
+                    <p>财务凭签单确认</p>
+                    <p>状态为“已收货”</p>
+                </div>
+                <div class="users-arrow">
+                    <i class="icon">&#xe622;</i>
+                </div>
+                <div class="users-item">
+                    <a href="#" title="物控部录入“发货时间”，状态为“已发货”"><i class="icon">&#xe62b;</i></a>
+                    <p>物控部录入“发货时间”</p>
+                    <p>状态为“已发货”</p>
+                </div>
+                <div class="users-arrow">
+                    <i class="icon">&#xe625;</i>
+                </div>
+                <div class="users-item">
+                    <a href="#" title="退货，物控入库，确认，状态为“退货入库”"><i class="icon">&#xe62d;</i></a>
+                    <p>退货，物控入库，确认</p>
+                    <p>状态为“退货入库”</p>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
-        <!--END 个人信息-->
+
+        <!--END 发货单-->
     </div>
     <!--END content-->
 </div>
@@ -224,7 +229,7 @@
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript">
     $(function () {
-        menu1("#ud1", "#ud1 a", ".coin_1 a.nav_top_item");
+        menu1("#ud6", "#ud6 a", ".coin_6 a.nav_top_item");
     })
 </script>
 
