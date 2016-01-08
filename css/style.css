@@ -529,6 +529,25 @@ fieldset .radio_inner {
     width: 14px;
     height: 14px;
 }
+.table_scroll{
+    width: 1059px;
+    overflow-x: scroll;
+}
+.table_scroll .table{
+    margin-bottom: 0;
+}
+.table_scroll thead tr th,.table_scroll tbody tr td{
+    padding: 6px 18px;
+    word-break: keep-all;
+    white-space:nowrap;
+}
+.th_table thead tr th,.td_table tbody tr td{
+    text-align: center;
+    border-bottom:none;
+}
+.table_scroll_button{
+    padding: 6px 18px;
+}
 /*END 表单*/
 
 /*搜索框*/
