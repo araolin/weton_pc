@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>威顿印务ERP系统</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="www.kwanson.com">
+    <meta name="version" content="v.1.0.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="position:relative;">
+<!--侧栏-->
+<div class="aside">
+    <div class="aside_wrapper">
+        <!-- Logo (200px wide) -->
+        <a href="#"><img class="logo" src="images/logo.png" alt="威顿ERP系统" /></a>
+
+        <ul class="main_nav">  <!-- main Menu -->
+            <li class="coin_1">
+                <a href="index.html" class="nav_top_item">
+                    <em class="icon">&#xe60b;</em>系统设置
+                </a>
+                <ul class="sub_menu hide" id="ud1">
+                    <li><a href="profile.html">个人信息</a></li>
+                    <li><a href="change_pwd.html">密码修改</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_2">
+                <a href="users.html" class="nav_top_item" >
+                    <em class="icon">&#xe604;</em>账号管理
+                </a>
+                <ul class="sub_menu hide" id="ud2">
+                    <li><a href="add_dept.html">新增部门</a></li>
+                    <li><a href="dept_list.html">部门列表</a></li>
+                    <li><a href="add_positions.html">新增职位</a></li>
+                    <li><a href="positions_list.html">职位列表</a></li>
+                    <li><a href="add_staff.html">新增员工</a></li>
+                    <li><a href="staff_list.html">员工列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_3">
+                <a href="crm.html" class="nav_top_item">
+                    <em class="icon">&#xe607;</em>客户管理
+                </a>
+                <ul class="sub_menu hide" id="ud3">
+                    <li><a href="add_customer.html">新增客户</a></li>
+                    <li><a href="customer_list.html">客户列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_4">
+                <a href="quotation.html" class="nav_top_item">
+                    <em class="icon">&#xe605;</em>报价单
+                </a>
+                <ul class="sub_menu hide" id="ud4">
+                    <li><a href="add_quotation.html">报价单录入</a></li>
+                    <li><a href="quotation_list.html">报价单列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_5">
+                <a href="manufacture.html" class="nav_top_item">
+                    <em class="icon">&#xe603;</em>生产单
+                </a>
+                <ul class="sub_menu hide" id="ud5">
+                    <li><a href="add_manufacture.html">生产单录入</a></li>
+                    <li><a href="manufacture_list.html">生产单列表</a></li>
+                    <li><a href="add_procedure.html">生产单工序录入</a></li>
+                    <li><a href="procedure_list.html">生产单工序列表</a></li>
+                    <li><a href="add_inventory.html">生产单库存录入</a></li>
+                    <li><a href="inventory_list.html">生产单库存列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_6">
+                <a href="delivery.html" class="nav_top_item">
+                    <em class="icon">&#xe606;</em>发货单
+                </a>
+                <ul class="sub_menu hide" id="ud6">
+                    <li><a href="add_delivery_notice.html">发货通知单录入</a></li>
+                    <li><a href="delivery_notice_list.html">发货通知单列表</a></li>
+                    <li><a href="delivery_list.html">发货单列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_7">
+                <a href="#" class="nav_top_item">
+                    <em class="icon">&#xe60a;</em>供应商管理
+                </a>
+                <ul class="sub_menu hide" id="ud7">
+                    <li><a href="#">新增供应商</a></li>
+                    <li><a href="#">供应商列表</a></li>
+                    <li><a href="#">新增原材料</a></li>
+                    <li><a href="#">原材料列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_8">
+                <a href="#" class="nav_top_item">
+                    <em class="icon">&#xe602;</em>采购单
+                </a>
+                <ul class="sub_menu hide" id="ud8">
+                    <li><a href="#">采购单录入</a></li>
+                    <li><a href="#">采购单列表</a></li>
+                    <li><a href="#">采购价格录入</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_9">
+                <a href="#" class="nav_top_item">
+                    <em class="icon">&#xe609;</em>物控管理
+                </a>
+                <ul class="sub_menu hide" id="ud9">
+                    <li><a href="#">新增仓库</a></li>
+                    <li><a href="#">仓库列表</a></li>
+                    <li><a href="#">仓库调整</a></li>
+                    <li><a href="#">物料领取表录入</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_10">
+                <a href="#" class="nav_top_item">
+                    <em class="icon">&#xe608;</em>财务管理
+                </a>
+                <ul class="sub_menu hide" id="ud10">
+                    <li><a href="#">日报表</a></li>
+                    <li><a href="#">月报表</a></li>
+                    <li><a href="#">年报表</a></li>
+                </ul>
+            </li>
+
+        </ul> <!-- End #main-nav -->
+    </div>
+</div>
+<!--END 侧栏-->
+<!-- main -->
+<div class="main">
+    <!--顶部top_bar-->
+    <div class="top_bar">
+        <div class="top_bar_inner fr">
+            <div class="logout">
+                <a href="javascript:;" title="退出">
+                    <i class="icon">&#xe60c;</i>
+                    退出
+                </a>
+            </div>
+            <div class="welcome">
+                <span class="fr">业务部 隔壁老王</span>
+                <img class="fr" src="images/avatar.jpg" alt="隔壁老王" />
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--END 顶部top_bar-->
+
+    <!--content-->
+    <div class="content">
+        <!--发货通知单录入-->
+        <div class="add_delivery_notice">
+            <div class="box">
+                <div class="box_t">
+                    <h3>发货通知单录入-收货信息</h3>
+                </div>
+                <div class="box_c">
+                    <form action="add_delivery_notice.html" method="post">
+                        <fieldset>
+                            <p>
+                            <div class="fl">
+                                <label class="l_title">公司名称：</label>
+                                <input class="text_input w300" type="text" name="corporate_name" id="corporate_name" placeholder="请输入公司名称">
+                                <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+                                <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+                                <script type="text/javascript">
+                                    $(function(){
+                                        var corporate_name = [
+                                            "广州君森科技有限公司","四川圣宝先有限公司","深圳腾讯科技有限公司","网易公司","北京百度科技有限公司","阿里巴巴集团"
+                                        ];
+
+                                        $("#corporate_name").autocomplete(corporate_name,{
+
+                                            width: 314,//提示的宽度
+                                            scrollHeight: 300,//提示的高度
+                                            matchContains: true,//是否只要包含文本框里的就可以
+                                            autoFill:false,//自动填充
+                                            mustMatch:true //只会允许匹配的结果出现在输入框
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">收货单位：</label>
+                                <input class="text_input w300 fl" type="text" id="consignee" placeholder="请输入收货单位">
+                                <script type="text/javascript">
+                                    $(function(){
+                                        var consignee = [
+                                            "广州君森科技有限公司","四川圣宝先有限公司","深圳腾讯科技有限公司","网易公司","北京百度科技有限公司","阿里巴巴集团"
+                                        ];
+
+                                        $("#consignee").autocomplete(consignee,{
+
+                                            width: 314,//提示的宽度
+                                            scrollHeight: 300,//提示的高度
+                                            matchContains: true,//是否只要包含文本框里的就可以
+                                            autoFill:false,//自动填充
+                                            mustMatch:true //只会允许匹配的结果出现在输入框
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            <div class="clear"></div>
+                            </p>
+                            <p>
+                            <div class="fl">
+                                <label class="l_title">收货人：</label>
+                                <input class="text_input w300" type="text" id="receiver" placeholder="请输入公司名称">
+                                <script type="text/javascript">
+                                    $(function(){
+                                        var receiver = [
+                                            "隔壁老王","A先生","B小姐","老娜","彭先森"
+                                        ];
+
+                                        $("#receiver").autocomplete(receiver,{
+
+                                            width: 314,//提示的宽度
+                                            scrollHeight: 300,//提示的高度
+                                            matchContains: true,//是否只要包含文本框里的就可以
+                                            autoFill:false,//自动填充
+                                            mustMatch:true //只会允许匹配的结果出现在输入框
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">联系方式：</label>
+                                <input class="text_input w300 fl" type="text" id="contact_info" placeholder="请输入联系方式">
+                                <script type="text/javascript">
+                                    $(function(){
+                                        var contact_info = [
+                                            "110","10086","44088888","120","12580","13666666666"
+                                        ];
+
+                                        $("#contact_info").autocomplete(contact_info,{
+
+                                            width: 314,//提示的宽度
+                                            scrollHeight: 300,//提示的高度
+                                            matchContains: true,//是否只要包含文本框里的就可以
+                                            autoFill:false,//自动填充
+                                            mustMatch:true //只会允许匹配的结果出现在输入框
+                                        });
+                                    });
+                                </script>
+                            </div>
+                            <div class="clear"></div>
+                            </p>
+                            <p>
+                                <label class="l_title">收货地址：</label>
+                                <input class="text_input w450" type="text" id="delivery_address" placeholder="请输入收货地址">
+                                <script type="text/javascript">
+                                    $(function(){
+                                        var delivery_address = [
+                                            "广州市尚德大厦","四川省成都","北京","深圳市南山区","海珠区仑头路21号"
+                                        ];
+
+                                        $("#delivery_address").autocomplete(delivery_address,{
+
+                                            width: 314,//提示的宽度
+                                            scrollHeight: 300,//提示的高度
+                                            matchContains: true,//是否只要包含文本框里的就可以
+                                            autoFill:false,//自动填充
+                                            mustMatch:true //只会允许匹配的结果出现在输入框
+                                        });
+                                    });
+                                </script>
+                            </p>
+                        </fieldset>
+                    </form>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="box">
+                <div class="box_t box_t_bottom">
+                    <h3>发货通知单录入-产品信息</h3>
+                    <button id="add_notice_button" class="btn btn_add fr" type="button"><i class="icon">&#xe61e;</i>&nbsp;录入</button>
+                    <div class="clear"></div>
+                </div>
+                <div class="box_c box_c_reset">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>产品名称</th>
+                            <th>产品货号</th>
+                            <th>产品规格</th>
+                            <th>发货数量</th>
+                            <th>产品单价（元）</th>
+                            <th>产品金额（元）</th>
+                            <th>备注</th>
+                            <th style="text-align: right">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>威顿印务ERP系统</td>
+                            <td>T1223</td>
+                            <td>100g</td>
+                            <td>10</td>
+                            <td>111</td>
+                            <td>1110</td>
+                            <td>备注内容</td>
+                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                        </tr><!-- 最多7行 -->
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                    <p class="fr">
+                        <label class="l_title"></label>
+                        <button class="btn btn_commit" type="button">确认提交</button> &nbsp;<a href="javascript:;" class="btn btn_cancel">取消</a>
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--END 发货通知单录入-->
+        <!-- 发货通知单产品录入弹窗-->
+        <script type="text/javascript" src="layer/layer.js"></script>
+        <script type="text/javascript">
+            $("#add_notice_button").bind("click",function(){
+                layer.open({
+                    type: 2,
+                    skin: 'layui-layer-rim', //加上边框
+                    area: ['998px', '420px'], //宽高
+                    title: false,
+                    closeBtn: 1,
+                    shadeClose: true,
+                    content: "delivery_product_form.html"
+                });
+            });
+        </script>
+        <!-- END 发货通知单产品录入弹窗-->
+    </div>
+    <!--END content-->
+</div>
+
+<!-- END main -->
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript">
+    $(function () {
+        menu1("#ud6", "#ud6 a", ".coin_6 a.nav_top_item");
+    })
+</script>
+
+</body>
+</html>

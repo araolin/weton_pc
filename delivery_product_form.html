@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background: #f3f2ee;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>威顿印务ERP系统</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="www.kwanson.com">
+    <meta name="version" content="v.1.0.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background: #f3f2ee;">
+
+<!-- main -->
+<div id="select_product_table" class="hide">
+    <fieldset>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>选择</th>
+                <th>威顿单号</th>
+                <th>产品名称</th>
+                <th>产品货号</th>
+                <th>产品规格</th>
+                <th>库存成品</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="radio" class="ace" name="chkItem"></td>
+                <td>WP15K081</td>
+                <td>三只松鼠松籽</td>
+                <td>T011</td>
+                <td>500g</td>
+                <td>9999</td>
+            </tr>
+            <tr>
+                <td><input type="radio" class="ace" name="chkItem"></td>
+                <td>WP15K099</td>
+                <td>三只松鼠松籽</td>
+                <td>T012</td>
+                <td>250g</td>
+                <td>9999</td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</div>
+<!--content-->
+<form action="add_delivery_notice.html" method="post">
+    <fieldset>
+        <p>
+        <div class="fl">
+            <label class="l_title">产品名称：</label>
+            <input class="text_input w300" type="text" name="corporate_name" id="product_name" placeholder="请输入产品名称并选择(测试输入“三”)">
+        </div>
+        <div class="fl">
+            <label class="l_title">产品货号：</label>
+            <input class="text_input w300 fl" type="text" id="product_code" placeholder="" disabled>
+        </div>
+        <div class="clear"></div>
+        </p>
+        <p>
+        <div class="fl">
+            <label class="l_title">产品规格：</label>
+            <input class="text_input w300" type="text" id="product_style" placeholder="" disabled>
+        </div>
+        <div class="fl">
+            <label class="l_title">发货数量：</label>
+            <input class="text_input w300 fl" type="text" id="delivery_num" placeholder="" disabled>
+        </div>
+        <div class="clear"></div>
+        </p>
+        <p>
+        <div class="fl">
+            <label class="l_title">产品单价：</label>
+            <input class="text_input w300" type="text" id="product_price" placeholder="" disabled>
+        </div>
+        <div class="fl">
+            <label class="l_title">产品余额：</label>
+            <input class="text_input w300 fl" type="text" id="product_balance" placeholder="" disabled>
+        </div>
+        <div class="clear"></div>
+        </p>
+        <p>
+            <label class="l_title">备注：</label>
+            <input class="text_input w450" type="text" placeholder="请输入备注">
+        </p>
+        <p>
+            <label class="l_title"></label>
+            <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel">取消</a>
+        </p>
+    </fieldset>
+</form>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    $(function(){
+        var product_name = [
+            "三只松鼠松籽"
+        ];
+        $("#product_name").autocomplete(product_name,{
+            width: 314,//提示的宽度
+            scrollHeight: 300,//提示的高度
+            matchContains: true,//是否只要包含文本框里的就可以
+            autoFill:false,//自动填充
+            mustMatch:true //只会允许匹配的结果出现在输入框
+        });
+        $("#product_name").result(function(event, data, formatted) {
+            if(formatted=="三只松鼠松籽"){
+                layer.open({
+                    type: 1,
+                    skin: 'layui-layer-rim', //加上边框
+                    area: ['600px', '360px'], //宽高
+                    title: false,
+                    closeBtn: 1,
+                    shadeClose: true,
+                    content: $("#select_product_table")
+                });
+            }
+            $("[name = chkItem]:radio").each(function () {
+                $(this).click(function(){
+                    if ($(this).attr("checked")) {
+                        layer.closeAll();
+                        var p_code=$(this).parent().parent().find("td").eq(1).html();
+                        var p_style=$(this).parent().parent().find("td").eq(4).html();
+                        var d_num=111;
+                        var p_price=99;
+                        var p_balance=99991;
+                        $("#product_code").val(p_code);
+                        $("#product_style").val(p_style);
+                        $("#delivery_num").val(d_num);
+                        $("#product_price").val(p_price);
+                        $("#product_balance").val(p_balance);
+                    }
+                })
+            });
+        });
+    });
+</script>
+<!--END 产品选择弹窗-->
+<!--END content-->
+<!-- END main -->
+
+
+</body>
+</html>
+

@@ -163,65 +163,98 @@
 
     <!--content-->
     <div class="content">
-        <!--发货单-->
-        <div class="delivery users">
+        <!--发货单列表-->
+        <div class="delivery__list">
             <div class="box">
-                <div class="users-item">
-                    <a href="add_delivery_notice.html" title="发货通知单录入"><i class="icon">&#xe62c;</i></a>
-                    <p>发货通知单录入</p>
+                <div class="box_t box_t_bottom">
+                    <h3 class="fl">发货单列表</h3>
+                    <div class="search_box fr">
+                        <input class="fl" type="text" placeholder="请输入公司名称/产品名称"/>
+                        <button class="fl" type="submit"><i class="icon">&#xe617;</i></button>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="users-arrow">
-                    <i class="icon">&#xe625;</i>
+                <div class="box_c box_c_reset table_scroll table_scroll_min">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" class="ace">全选</th>
+                                <th>日期</th>
+                                <th>送货编号</th>
+                                <th>公司名称</th>
+                                <th>产品名称</th>
+                                <th>产品货号</th>
+                                <th>发货数量</th>
+                                <th>单价（元）</th>
+                                <th>总额（元）</th>
+                                <th>收货单位</th>
+                                <th>发货状态</th>
+                                <th class="text-right">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr title="2016/1/11/WD122235/广州君森科技有限公司">
+                                <td><input type="checkbox" class="ace"></td>
+                                <td>2016/1/11</td>
+                                <td>WD122235</td>
+                                <td>广州君森科技有限公司</td>
+                                <td>ERP系统</td>
+                                <td>P33345</td>
+                                <td>1222</td>
+                                <td>5555</td>
+                                <td>666666</td>
+                                <td>广州君森科技有限公司，郑小姐，100000000000</td>
+                                <td>发货中</td>
+                                <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                            </tr>
+                            <tr title="2016/1/11/WD122236/广州君森科技有限公司">
+                                <td><input type="checkbox" class="ace"></td>
+                                <td>2016/1/11</td>
+                                <td>WD122236</td>
+                                <td>广州君森科技有限公司</td>
+                                <td>ERP系统</td>
+                                <td>P33345</td>
+                                <td>1222</td>
+                                <td>5555</td>
+                                <td>666666</td>
+                                <td>广州君森科技有限公司，郑小姐，100000000000</td>
+                                <td>发货中</td>
+                                <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                            </tr>
+                            <tr title="2016/1/11/WD122237/广州君森科技有限公司">
+                                <td rowspan="2"><input type="checkbox" class="ace"></td>
+                                <td rowspan="2">2016/1/11</td>
+                                <td rowspan="2">WD122237</td>
+                                <td rowspan="2">广州君森科技有限公司</td>
+                                <td>ERP系统</td>
+                                <td>P33345</td>
+                                <td>1222</td>
+                                <td>5555</td>
+                                <td>666666</td>
+                                <td rowspan="2">广州君森科技有限公司，郑小姐，100000000000</td>
+                                <td rowspan="2">发货中</td>
+                                <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                            </tr>
+                            <tr title="2016/1/11/WD122237/广州君森科技有限公司">
+                                <td>ERP系统</td>
+                                <td>P33345</td>
+                                <td>1222</td>
+                                <td>5555</td>
+                                <td>666666</td>
+                                <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table_scroll_button">
+                        <input type="checkbox" class="ace">全选
+                        <a href="javascript:;" class="btn btn_cancel">删除</a>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="users-item">
-                    <a href="delivery_notice_list.html" title="发货通知单列表，状态为“待发货”"><i class="icon">&#xe62f;</i></a>
-                    <p>发货通知单列表</p>
-                    <p>状态为“待发货”</p>
-                </div>
-                <div class="users-arrow">
-                    <i class="icon">&#xe625;</i>
-                </div>
-                <div class="users-item">
-                    <a href="delivery_notice_list.html" title="发货通知单列表，状态为“发货中”"><i class="icon">&#xe62e;</i></a>
-                    <p>发货通知单列表</p>
-                    <p>状态为“发货中”</p>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="box">
-                <div style="width: 480px;"></div>
-                <div class="users-arrow">
-                    <i class="icon">&#xe621;</i>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="box">
-                <div class="users-item">
-                    <a href="#" title="财务凭签单确认，状态为“已收货”"><i class="icon">&#xe62a;</i></a>
-                    <p>财务凭签单确认</p>
-                    <p>状态为“已收货”</p>
-                </div>
-                <div class="users-arrow">
-                    <i class="icon">&#xe622;</i>
-                </div>
-                <div class="users-item">
-                    <a href="#" title="物控部录入“发货时间”，状态为“已发货”"><i class="icon">&#xe62b;</i></a>
-                    <p>物控部录入“发货时间”</p>
-                    <p>状态为“已发货”</p>
-                </div>
-                <div class="users-arrow">
-                    <i class="icon">&#xe625;</i>
-                </div>
-                <div class="users-item">
-                    <a href="#" title="退货，物控入库，确认，状态为“退货入库”"><i class="icon">&#xe62d;</i></a>
-                    <p>退货，物控入库，确认</p>
-                    <p>状态为“退货入库”</p>
-                </div>
-                <div class="clear"></div>
             </div>
         </div>
-
-        <!--END 发货单-->
+        <!--END 发货单列表-->
     </div>
     <!--END content-->
 </div>
