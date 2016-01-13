@@ -372,6 +372,7 @@ fieldset label.l_title {
 }
 fieldset span.l_con{
     float: left;
+    padding:0 8px;
     height: 30px;
     line-height: 30px;
 }

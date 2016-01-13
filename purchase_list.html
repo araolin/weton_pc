@@ -103,13 +103,13 @@
             </li>
 
             <li class="coin_8">
-                <a href="#" class="nav_top_item">
+                <a href="purchase.html" class="nav_top_item">
                     <em class="icon">&#xe602;</em>采购单
                 </a>
                 <ul class="sub_menu hide" id="ud8">
-                    <li><a href="#">采购单录入</a></li>
-                    <li><a href="#">采购单列表</a></li>
-                    <li><a href="#">采购价格录入</a></li>
+                    <li><a href="add_purchase.html">采购单录入</a></li>
+                    <li><a href="purchase_list.html">采购单列表</a></li>
+                    <li><a href="purchase_price_list.html">采购价格列表</a></li>
                 </ul>
             </li>
 
@@ -163,11 +163,11 @@
 
     <!--content-->
     <div class="content">
-        <!--原材料列表-->
-        <div class="material_list">
+        <!--采购单列表-->
+        <div class="purchase_list">
             <div class="box">
                 <div class="box_t box_t_bottom">
-                    <h3 class="fl">原材料列表</h3>
+                    <h3 class="fl">采购单列表</h3>
                     <div class="search_box fr">
                         <input class="fl" type="text" placeholder="请输入客户姓名/公司名称"/>
                         <button class="fl" type="submit"><i class="icon">&#xe617;</i></button>
@@ -178,39 +178,31 @@
                 <div class="box_c box_c_reset">
                     <table class="table">
                         <thead>
-                        <tr>
-                            <th>编号</th>
-                            <th>公司名称</th>
-                            <th>原材料名称</th>
-                            <th class="text-right">操作</th>
-                        </tr>
+                            <tr>
+                                <th>采购日期</th>
+                                <th>供应商名称</th>
+                                <th>产品名称</th>
+                                <th>单位</th>
+                                <th>数量</th>
+                                <th class="text-right">操作</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>广州君森科技有限公司</td>
-                            <td>ERP</td>
-                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>深圳暴走漫画有限公司</td>
-                            <td>头套</td>
-                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>三只松鼠有限公司</td>
-                            <td>葡萄</td>
-                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
-                        </tr>
+                            <tr>
+                                <td>2016/01/13</td>
+                                <td>广州君森科技有限公司</td>
+                                <td>ERP</td>
+                                <td>个</td>
+                                <td>1</td>
+                                <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <!--END 原材料列表-->
+        <!--END 采购单列表-->
     </div>
     <!--END content-->
 </div>
@@ -219,7 +211,7 @@
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript">
     $(function () {
-        menu1("#ud7", "#ud7 a", ".coin_7 a.nav_top_item");
+        menu1("#ud8", "#ud8 a", ".coin_8 a.nav_top_item");
     })
 </script>
 
