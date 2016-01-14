@@ -304,18 +304,18 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{backg
 .box_t h3{
     color: #78cc40;
     line-height: 40px;
-    margin-left: 12px;
-    padding:0 8px;
+    margin-left: 18px;
+    padding-right: 8px;
     font-size: 16px;
     display: inline-block;
     _zoom:1;
     *display:inline;
 }
 .box_t .btn_add{
-    color: #fff;
+    color: #5fbd21;
     margin: 4px 16px;
     border: 1px solid #c3e4e2;
-    background-color: #65cdcc;
+    background-color: #fff;
 }
 .box_t_bottom{
     border-bottom: 2px solid #b2b2b2;
