@@ -40,6 +40,9 @@ button, input, select, textarea {
 .w450{
     width: 450px !important;
 }
+.w400{
+    width: 400px !important;
+}
 .w300 {
     width: 300px !important;
 }
@@ -579,7 +582,7 @@ fieldset .radio_inner {
     height: 28px;
     width: 40px;
     border: 1px solid #fff;
-    background-color: #f4556b;
+    background-color: #5fbd21;
     color: #fff;
     cursor: pointer;
 }
