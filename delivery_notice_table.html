@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>威顿印务ERP系统</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="www.kwanson.com">
+    <meta name="version" content="v.1.0.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/print_table.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="delivery_notice_table">
+    <div class="delivery_notice_header">
+        <img width="75px" height="100px" src="images/purchase_logo.jpg" />
+        <div class="delivery_notice_title">
+            <h3>广州市威顿印务有限公司</h3>
+            <p>送货单</p>
+        </div>
+        <div class="delivery_notice_no">
+            送货编号：WD
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="delivery_notice_info">
+        <table>
+            <tbody>
+                <tr>
+                    <td>地址：广州市花都区镜湖工业区邦盛三路8号</td>
+                    <td>电话：020-86910222</td>
+                    <td>传真：020-36956789</td>
+                </tr>
+                <tr>
+                    <td>客户名称：</td>
+                    <td>电话：</td>
+                    <td>发货日期：&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;月&nbsp;&nbsp;日</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="delivery_notice_con">
+        <table>
+            <thead>
+                <tr>
+                    <th class="w80">产品编号</th>
+                    <th class="w165">产品全名</th>
+                    <th class="w45">单位</th>
+                    <th class="w70">数量</th>
+                    <th class="w70">单价/元</th>
+                    <th class="w75">金额/元</th>
+                    <th>备注</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>（全部共&nbsp;&nbsp;件，每款给予1%的备品）</td>
+                </tr>
+                <tr class="total_tr">
+                    <td colspan="5">
+                        合计（大写）：
+                    </td>
+                    <td colspan="2">
+                        合计(小写)：
+                    </td>
+                </tr>
+                <tr class="total_tr">
+                    <td colspan="4">
+                        未付累计：
+                    </td>
+                    <td colspan="3">
+                        总计：
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="delivery_notice_footer">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="w245">收货单位</td>
+                    <td class="w270">送货单位</td>
+                    <td rowspan="2">制单人：方泽敏</td>
+                </tr>
+                <tr>
+                    <td class="w245">及经手人：</td>
+                    <td class="w270">及经手人：</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="clear"></div>
+    <div class="operate">
+        <button type="button" id="print_button" class="btn"><i class="icon">&#xe61f;</i>&nbsp;打印</button>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#print_button").click(function(){
+        $(".operate").hide();
+        window.print();
+        $(".operate").show();
+    })
+</script>
+</body>
+</html>

@@ -50,15 +50,36 @@ a{color:#757575;text-decoration:none}a:hover{color:#fc9635;;text-decoration:none
     width: 84px;
     margin: 10px auto;
 }
+.w80{
+    width: 80px!important;
+}
+.w165{
+    width: 165px!important;
+}
+.w45{
+    width: 45px!important;
+}
+.w70{
+    width: 70px!important;
+}
+.w75{
+    width: 75px!important;
+}
 
 .w230{
-    width: 230px;
+    width: 230px!important;
+}
+.w245{
+    width: 245px!important;
+}
+.w270{
+    width: 270px!important;
 }
 .w170{
-    width: 170px;
+    width: 170px!important;
 }
 .w100{
-    width: 100px;
+    width: 100px!important;
 }
 body{
     font-family: "SimSun", "NSimSun", "FangSong", "Microsoft YaHei";
@@ -116,4 +137,61 @@ body{
 }
 .quotation_table_tips td{
     padding: 10px 0;
+}
+
+.delivery_notice_table{
+    width: 785px;
+    margin-top: 4px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.delivery_notice_header{
+    width: 600px;
+    margin: 5px auto;
+}
+.delivery_notice_header img{
+    float: left;
+}
+.delivery_notice_title{
+    float: left;
+    padding: 0 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.delivery_notice_title h3{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.delivery_notice_title p{
+    font-size: 28px;
+}
+.delivery_notice_no {
+    font-size: 14px;
+    padding: 80px 0 0 0;
+}
+.delivery_notice_info table,.delivery_notice_con table,.delivery_notice_footer table{
+    width: 785px;
+}
+.delivery_notice_info table tr{
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.delivery_notice_con table{
+    border: 1px solid #000;
+}
+.delivery_notice_con table th,.delivery_notice_con table td{
+    text-align: center;
+    border: 1px solid #000;
+    height: 23px;
+    line-height: 23px;
+}
+.delivery_notice_con .total_tr td{
+    text-align: left;
+}
+.delivery_notice_footer td{
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
 }

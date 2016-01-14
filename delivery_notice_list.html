@@ -188,7 +188,7 @@
                                 <td>ERP系统</td>
                                 <td>T11111</td>
                                 <td>999</td>
-                                <td class="text-right"><a href="#">编辑</a> | <a href="#">打印预览</a></td>
+                                <td class="text-right"><a href="#">编辑</a> | <a href="javascript:;" id="delivery_print_button">打印预览</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -200,11 +200,19 @@
         <!--END 发货通知单列表-->
 
         <!--发货通知单打印预览弹窗-->
-
-
         <script type="text/javascript" src="layer/layer.js"></script>
         <script type="text/javascript">
-
+            $("#delivery_print_button").bind("click",function(){
+                layer.open({
+                    type: 2,
+                    skin: 'layui-layer-rim', //加上边框
+                    area: ['1018px', '480px'], //宽高
+                    title: false,
+                    closeBtn: 1,
+                    shadeClose: true,
+                    content: 'delivery_notice_table.html'
+                });
+            });
         </script>
         <!--END 发货通知单打印预览弹窗-->
     </div>
