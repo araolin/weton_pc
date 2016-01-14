@@ -53,14 +53,14 @@ a{color:#757575;text-decoration:none}a:hover{color:#fc9635;;text-decoration:none
 .w80{
     width: 80px!important;
 }
-.w165{
-    width: 165px!important;
+.w150{
+    width: 150px!important;
 }
 .w45{
     width: 45px!important;
 }
-.w70{
-    width: 70px!important;
+.w65{
+    width: 65px!important;
 }
 .w75{
     width: 75px!important;
@@ -140,13 +140,13 @@ body{
 }
 
 .delivery_notice_table{
-    width: 785px;
+    width: 680px;
     margin-top: 4px;
     margin-right: auto;
     margin-left: auto;
 }
 .delivery_notice_header{
-    width: 600px;
+    width: 540px;
     margin: 5px auto;
 }
 .delivery_notice_header img{
@@ -159,39 +159,46 @@ body{
     text-align: center;
 }
 .delivery_notice_title h3{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
-    line-height: 60px;
+    line-height: 50px;
 }
 .delivery_notice_title p{
-    font-size: 28px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 22px;
 }
 .delivery_notice_no {
     font-size: 14px;
-    padding: 80px 0 0 0;
+    padding: 65px 0 0 0;
 }
 .delivery_notice_info table,.delivery_notice_con table,.delivery_notice_footer table{
-    width: 785px;
+    width: 680px;
 }
 .delivery_notice_info table tr{
-    height: 20px;
-    line-height: 20px;
+    height: 16px;
+    line-height: 16px;
     font-weight: bold;
+    font-size: 12px;
 }
 .delivery_notice_con table{
     border: 1px solid #000;
 }
 .delivery_notice_con table th,.delivery_notice_con table td{
+    font-size: 14px;
     text-align: center;
     border: 1px solid #000;
-    height: 23px;
-    line-height: 23px;
+    height: 18px;
+    line-height: 18px;
+}
+.delivery_notice_con table td{
+    font-size: 12px;
 }
 .delivery_notice_con .total_tr td{
     text-align: left;
 }
 .delivery_notice_footer td{
-    font-size: 12px;
+    font-size: 10px;
     height: 20px;
     line-height: 20px;
 }
