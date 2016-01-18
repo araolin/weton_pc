@@ -431,6 +431,18 @@ fieldset .radio_inner {
     margin: 0 auto;
     padding: 45px 0 20px;
 }
+.box_c_item .add_more{
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    float: left;
+    padding: 0 7px;
+    border: 1px dotted #d5d5d5;
+    cursor: pointer;
+}
+.box_c_item .add_more a{
+    display: block;
+}
 /*END 表单*/
 
 /*layer tips*/
