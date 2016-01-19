@@ -128,13 +128,17 @@
             </li>
 
             <li class="coin_10">
-                <a href="finance_d.html" class="nav_top_item">
+                <a href="add_beginning.html" class="nav_top_item">
                     <em class="icon">&#xe608;</em>财务管理
                 </a>
                 <ul class="sub_menu hide" id="ud10">
-                    <li><a href="finance_d.html">日报表</a></li>
+                    <li><a href="add_beginning.html">期初应收录入</a></li>
+                    <li><a href="beginning_list.html">期初应收列表</a></li>
+                    <li><a href="add_received.html">来款登记表录入</a></li>
+                    <li><a href="received_list.html">来款登记表列表</a></li>
+                    <li><a href="add_paid.html">付款登记表录入</a></li>
+                    <li><a href="paid_list.html">付款登记表列表</a></li>
                     <li><a href="finance_m.html">月报表</a></li>
-                    <li><a href="finance_y.html">年报表</a></li>
                 </ul>
             </li>
 
@@ -165,11 +169,11 @@
 
     <!--content-->
     <div class="content">
-        <!--物料领取表列表-->
-        <div class="material_receiving_list">
+        <!--期初应收列表-->
+        <div class="beginning_list_supplier">
             <div class="box">
                 <div class="box_t box_t_bottom">
-                    <h3 class="fl">物料领取表列表</h3>
+                    <h3 class="fl">期初应收列表-供应商</h3>
                     <div class="search_box fr">
                         <input class="fl" type="text" placeholder="请输入客户姓名/公司名称"/>
                         <button class="fl" type="submit"><i class="icon">&#xe617;</i></button>
@@ -181,34 +185,24 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>领取日期</th>
-                            <th>领料人</th>
-                            <th>原材料名称</th>
-                            <th>规格</th>
-                            <th>单位</th>
-                            <th>请领数量</th>
-                            <th>实发数量</th>
+                            <th>公司名称</th>
+                            <th>期初应收（元）</th>
                             <th class="text-right">操作</th>
                         </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>WP23PP44</td>
-                                <td>广州君森科技有限公司</td>
-                                <td>ERP</td>
-                                <td>BETA1.0</td>
-                                <td>IE6+</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
-                            </tr>
+                        <tr>
+                            <td>广州君森科技有限公司</td>
+                            <td>12345</td>
+                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                        </tr>
                         </tbody>
                     </table>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <!--END 物料领取表列表-->
+        <!--END 期初应收列表-->
     </div>
     <!--END content-->
 </div>
@@ -217,7 +211,7 @@
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript">
     $(function () {
-        menu1("#ud9", "#ud9 a", ".coin_9 a.nav_top_item");
+        menu1("#ud10", "#ud10 a", ".coin_10 a.nav_top_item");
     })
 </script>
 
