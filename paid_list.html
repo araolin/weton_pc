@@ -169,46 +169,42 @@
 
     <!--content-->
     <div class="content">
-        <!--来款登记表列表-->
-        <div class="received_list_supplier">
+        <!--付款登记表列表-->
+        <div class="paid_list">
             <div class="box">
-                <div class="box_t box_t_bottom">
-                    <h3 class="fl">来款登记表列表-供应商</h3>
-                    <div class="search_box fr">
-                        <input class="fl" type="text" placeholder="请输入客户姓名/公司名称"/>
-                        <button class="fl" type="submit"><i class="icon">&#xe617;</i></button>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="clear"></div>
+                <div class="box_t">
+                    <h3>付款登记表列表-选择公司类型</h3>
                 </div>
-                <div class="box_c box_c_reset">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>来款日期</th>
-                                <th>公司名称</th>
-                                <th>来款（元）</th>
-                                <th>来款方式</th>
-                                <th>备注</th>
-                                <th class="text-right">操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2016/01/19</td>
-                                <td>广州君森科技有限公司</td>
-                                <td>12345</td>
-                                <td>现金</td>
-                                <td>贷款</td>
-                                <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="box_c">
+                    <fieldset>
+                        <div class="box_c_item">
+                            <label class="l_title">公司类型：</label>
+                            <select class="w150" id="add_select">
+                                <option value="option1">客户</option>
+                                <option value="option2">供应商</option>
+                            </select>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title"></label>
+                            <button class="btn btn_commit" type="button" id="commit_add">确认</button>
+                            <div class="clear"></div>
+                        </div>
+                        <script type="text/javascript">
+                            $("#commit_add").click(function(){
+                                if($("#add_select").val()=="option1"){
+                                    location.href = "paid_list_customer.html";
+                                }else{
+                                    location.href = "paid_list_supplier.html";
+                                }
+                            })
+                        </script>
+                    </fieldset>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <!--END 来款登记表列表-->
+        <!--END 付款登记表列表-->
     </div>
     <!--END content-->
 </div>

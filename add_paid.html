@@ -169,46 +169,102 @@
 
     <!--content-->
     <div class="content">
-        <!--来款登记表列表-->
-        <div class="received_list_supplier">
+        <!--付款登记表录入-->
+        <div class="add_paid">
             <div class="box">
-                <div class="box_t box_t_bottom">
-                    <h3 class="fl">来款登记表列表-供应商</h3>
-                    <div class="search_box fr">
-                        <input class="fl" type="text" placeholder="请输入客户姓名/公司名称"/>
-                        <button class="fl" type="submit"><i class="icon">&#xe617;</i></button>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="clear"></div>
+                <div class="box_t">
+                    <h3>付款登记表录入</h3>
                 </div>
-                <div class="box_c box_c_reset">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>来款日期</th>
-                                <th>公司名称</th>
-                                <th>来款（元）</th>
-                                <th>来款方式</th>
-                                <th>备注</th>
-                                <th class="text-right">操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2016/01/19</td>
-                                <td>广州君森科技有限公司</td>
-                                <td>12345</td>
-                                <td>现金</td>
-                                <td>贷款</td>
-                                <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="box_c">
+                    <fieldset>
+                        <div class="box_c_item">
+                            <label class="l_title">公司类型：</label>
+                            <select class="w150">
+                                <option value="option1">客户</option>
+                                <option value="option2">供应商</option>
+                            </select>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">公司名称：</label>
+                            <input class="text_input w300" type="text" name="corporate_name" id="corporate_name" placeholder="请输入公司名称">
+                            <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+                            <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+                            <script type="text/javascript">
+                                $(function(){
+                                    var corporate_name = [
+                                        "广州君森科技有限公司","四川圣宝先有限公司","深圳腾讯科技有限公司","网易公司","北京百度科技有限公司","阿里巴巴集团"
+                                    ];
+
+                                    $("#corporate_name").autocomplete(corporate_name,{
+
+                                        width: 314,//提示的宽度
+                                        scrollHeight: 300,//提示的高度
+                                        matchContains: true,//是否只要包含文本框里的就可以
+                                        autoFill:false,//自动填充
+                                        mustMatch:true //只会允许匹配的结果出现在输入框
+                                    });
+                                });
+                            </script>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">付款日期：</label>
+                            <input class="text_input w300" type="text" placeholder="请选择付款日期" onClick="laydate({istime: true, format: 'YYYY-MM-DD'})">
+                            <!-- 日历控件 -->
+                            <script type="text/javascript" src="laydate/laydate.js"></script>
+                            <script>
+                                !function(){
+                                    laydate.skin('yalan');//切换皮肤，请查看skins下面皮肤库
+                                }();
+                            </script>
+                            <!-- END 日历控件 -->
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">付款金额：</label>
+                            <input class="text_input w300" type="text" placeholder="请输入实际付款金额">
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">请选择付款方式：</label>
+                            <span class="l_con">
+                                <input type="radio" class="ace" name="received_from">现金
+                            </span>
+                            <span class="l_con">
+                                <input type="radio" class="ace" name="received_from">公户
+                            </span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">&nbsp;</label>
+                            <span class="l_con">
+                                <input type="radio" class="ace" name="received_from">私户（锐泽，中行）
+                            </span>
+                            <span class="l_con">
+                                <input type="radio" class="ace" name="received_from">私户（锐泽，建行）
+                            </span>
+                                     <span class="l_con">
+                                <input type="radio" class="ace" name="received_from">私户（锐泽，农行）
+                            </span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">备注：</label>
+                            <textarea class="text_input w300" type="text" placeholder="请输入备注" rows="3"></textarea>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title"></label>
+                            <button class="btn btn_commit" type="button" id="commit_add">确认</button>
+                            <div class="clear"></div>
+                        </div>
+                    </fieldset>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <!--END 来款登记表列表-->
+        <!--END 付款登记表录入-->
     </div>
     <!--END content-->
 </div>
