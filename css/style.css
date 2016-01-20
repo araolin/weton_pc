@@ -64,6 +64,12 @@ button, input, select, textarea {
 .text-right {
     text-align: right;
 }
+.pages{ width:100.5%; text-align:right; padding:10px 0; clear:both;}
+.pages a,.pages b{ margin:0 2px;color:#78cc40;}
+.pages a,.pages b{ border:1px solid #78cc40; background:#fff; padding:5px 9px; text-decoration:none}
+.pages a{ color:#333;border-color:#ccc;}
+.pages span { padding-right:10px }
+.pages b,.pages a:hover{ background:#78cc40; color:#fff;border-color:#78cc40;}
 /*谷歌*/
 input:-webkit-autofill {
     background-color:#fff;
