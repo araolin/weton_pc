@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
-<body style="position:relative;">
+<body>
 <!--侧栏-->
 <div class="aside">
     <div class="aside_wrapper">
@@ -91,48 +91,54 @@
             </li>
 
             <li class="coin_7">
-                <a href="#" class="nav_top_item">
+                <a href="add_supplier.html" class="nav_top_item">
                     <em class="icon">&#xe60a;</em>供应商管理
                 </a>
                 <ul class="sub_menu hide" id="ud7">
-                    <li><a href="#">新增供应商</a></li>
-                    <li><a href="#">供应商列表</a></li>
-                    <li><a href="#">新增原材料</a></li>
-                    <li><a href="#">原材料列表</a></li>
+                    <li><a href="add_supplier.html">新增供应商</a></li>
+                    <li><a href="supplier_list.html">供应商列表</a></li>
+                    <li><a href="add_material.html">新增原材料</a></li>
+                    <li><a href="material_list.html">原材料列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_8">
-                <a href="#" class="nav_top_item">
+                <a href="add_purchase.html" class="nav_top_item">
                     <em class="icon">&#xe602;</em>采购单
                 </a>
                 <ul class="sub_menu hide" id="ud8">
-                    <li><a href="#">采购单录入</a></li>
-                    <li><a href="#">采购单列表</a></li>
-                    <li><a href="#">采购价格录入</a></li>
+                    <li><a href="add_purchase.html">采购单录入</a></li>
+                    <li><a href="purchase_list.html">采购单列表</a></li>
+                    <li><a href="purchase_price_list.html">采购价格列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_9">
-                <a href="#" class="nav_top_item">
+                <a href="add_warehouse.html" class="nav_top_item">
                     <em class="icon">&#xe609;</em>物控管理
                 </a>
                 <ul class="sub_menu hide" id="ud9">
-                    <li><a href="#">新增仓库</a></li>
-                    <li><a href="#">仓库列表</a></li>
-                    <li><a href="#">仓库调整</a></li>
-                    <li><a href="#">物料领取表录入</a></li>
+                    <li><a href="add_warehouse.html">新增仓库</a></li>
+                    <li><a href="warehouse_list.html">仓库列表</a></li>
+                    <li><a href="add_warehouse_delivery.html">库存录入</a></li>
+                    <li><a href="warehouse_delivery_list.html">库存列表</a></li>
+                    <li><a href="add_material_receiving.html">物料领取表录入</a></li>
+                    <li><a href="material_receiving_list.html">物料领取表列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_10">
-                <a href="#" class="nav_top_item">
+                <a href="add_beginning.html" class="nav_top_item">
                     <em class="icon">&#xe608;</em>财务管理
                 </a>
                 <ul class="sub_menu hide" id="ud10">
-                    <li><a href="#">日报表</a></li>
-                    <li><a href="#">月报表</a></li>
-                    <li><a href="#">年报表</a></li>
+                    <li><a href="add_beginning.html">期初应收录入</a></li>
+                    <li><a href="beginning_list.html">期初应收列表</a></li>
+                    <li><a href="add_received.html">来款登记表录入</a></li>
+                    <li><a href="received_list.html">来款登记表列表</a></li>
+                    <li><a href="add_paid.html">付款登记表录入</a></li>
+                    <li><a href="paid_list.html">付款登记表列表</a></li>
+                    <li><a href="finance_m.html">月报表</a></li>
                 </ul>
             </li>
 
@@ -172,95 +178,95 @@
                 <div class="box_c">
                     <form action="add_delivery_notice.html" method="post">
                         <fieldset>
-                            <p>
-                            <div class="fl">
-                                <label class="l_title">公司名称：</label>
-                                <input class="text_input w300" type="text" name="corporate_name" id="corporate_name" placeholder="请输入公司名称">
-                                <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
-                                <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
-                                <script type="text/javascript">
-                                    $(function(){
-                                        var corporate_name = [
-                                            "广州君森科技有限公司","四川圣宝先有限公司","深圳腾讯科技有限公司","网易公司","北京百度科技有限公司","阿里巴巴集团"
-                                        ];
+                            <div class="box_c_item">
+                                <div class="fl">
+                                    <label class="l_title">公司名称：</label>
+                                    <input class="text_input w300" type="text" name="corporate_name" id="corporate_name" placeholder="请输入公司名称">
+                                    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+                                    <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+                                    <script type="text/javascript">
+                                        $(function(){
+                                            var corporate_name = [
+                                                "广州君森科技有限公司","四川圣宝先有限公司","深圳腾讯科技有限公司","网易公司","北京百度科技有限公司","阿里巴巴集团"
+                                            ];
 
-                                        $("#corporate_name").autocomplete(corporate_name,{
+                                            $("#corporate_name").autocomplete(corporate_name,{
 
-                                            width: 314,//提示的宽度
-                                            scrollHeight: 300,//提示的高度
-                                            matchContains: true,//是否只要包含文本框里的就可以
-                                            autoFill:false,//自动填充
-                                            mustMatch:true //只会允许匹配的结果出现在输入框
+                                                width: 314,//提示的宽度
+                                                scrollHeight: 300,//提示的高度
+                                                matchContains: true,//是否只要包含文本框里的就可以
+                                                autoFill:false,//自动填充
+                                                mustMatch:true //只会允许匹配的结果出现在输入框
+                                            });
                                         });
-                                    });
-                                </script>
-                            </div>
-                            <div class="fl">
-                                <label class="l_title">收货单位：</label>
-                                <input class="text_input w300 fl" type="text" id="consignee" placeholder="请输入收货单位">
-                                <script type="text/javascript">
-                                    $(function(){
-                                        var consignee = [
-                                            "广州君森科技有限公司","四川圣宝先有限公司","深圳腾讯科技有限公司","网易公司","北京百度科技有限公司","阿里巴巴集团"
-                                        ];
+                                    </script>
+                                </div>
+                                <div class="fl">
+                                    <label class="l_title">收货单位：</label>
+                                    <input class="text_input w300 fl" type="text" id="consignee" placeholder="请输入收货单位">
+                                    <script type="text/javascript">
+                                        $(function(){
+                                            var consignee = [
+                                                "广州君森科技有限公司","四川圣宝先有限公司","深圳腾讯科技有限公司","网易公司","北京百度科技有限公司","阿里巴巴集团"
+                                            ];
 
-                                        $("#consignee").autocomplete(consignee,{
+                                            $("#consignee").autocomplete(consignee,{
 
-                                            width: 314,//提示的宽度
-                                            scrollHeight: 300,//提示的高度
-                                            matchContains: true,//是否只要包含文本框里的就可以
-                                            autoFill:false,//自动填充
-                                            mustMatch:true //只会允许匹配的结果出现在输入框
+                                                width: 314,//提示的宽度
+                                                scrollHeight: 300,//提示的高度
+                                                matchContains: true,//是否只要包含文本框里的就可以
+                                                autoFill:false,//自动填充
+                                                mustMatch:true //只会允许匹配的结果出现在输入框
+                                            });
                                         });
-                                    });
-                                </script>
+                                    </script>
+                                </div>
+                                <div class="clear"></div>
                             </div>
-                            <div class="clear"></div>
-                            </p>
-                            <p>
-                            <div class="fl">
-                                <label class="l_title">收货人：</label>
-                                <input class="text_input w300" type="text" id="receiver" placeholder="请输入公司名称">
-                                <script type="text/javascript">
-                                    $(function(){
-                                        var receiver = [
-                                            "隔壁老王","A先生","B小姐","老娜","彭先森"
-                                        ];
+                            <div class="box_c_item">
+                                <div class="fl">
+                                    <label class="l_title">收货人：</label>
+                                    <input class="text_input w300" type="text" id="receiver" placeholder="请输入公司名称">
+                                    <script type="text/javascript">
+                                        $(function(){
+                                            var receiver = [
+                                                "隔壁老王","A先生","B小姐","老娜","彭先森"
+                                            ];
 
-                                        $("#receiver").autocomplete(receiver,{
+                                            $("#receiver").autocomplete(receiver,{
 
-                                            width: 314,//提示的宽度
-                                            scrollHeight: 300,//提示的高度
-                                            matchContains: true,//是否只要包含文本框里的就可以
-                                            autoFill:false,//自动填充
-                                            mustMatch:true //只会允许匹配的结果出现在输入框
+                                                width: 314,//提示的宽度
+                                                scrollHeight: 300,//提示的高度
+                                                matchContains: true,//是否只要包含文本框里的就可以
+                                                autoFill:false,//自动填充
+                                                mustMatch:true //只会允许匹配的结果出现在输入框
+                                            });
                                         });
-                                    });
-                                </script>
-                            </div>
-                            <div class="fl">
-                                <label class="l_title">联系方式：</label>
-                                <input class="text_input w300 fl" type="text" id="contact_info" placeholder="请输入联系方式">
-                                <script type="text/javascript">
-                                    $(function(){
-                                        var contact_info = [
-                                            "110","10086","44088888","120","12580","13666666666"
-                                        ];
+                                    </script>
+                                </div>
+                                <div class="fl">
+                                    <label class="l_title">联系方式：</label>
+                                    <input class="text_input w300 fl" type="text" id="contact_info" placeholder="请输入联系方式">
+                                    <script type="text/javascript">
+                                        $(function(){
+                                            var contact_info = [
+                                                "110","10086","44088888","120","12580","13666666666"
+                                            ];
 
-                                        $("#contact_info").autocomplete(contact_info,{
+                                            $("#contact_info").autocomplete(contact_info,{
 
-                                            width: 314,//提示的宽度
-                                            scrollHeight: 300,//提示的高度
-                                            matchContains: true,//是否只要包含文本框里的就可以
-                                            autoFill:false,//自动填充
-                                            mustMatch:true //只会允许匹配的结果出现在输入框
+                                                width: 314,//提示的宽度
+                                                scrollHeight: 300,//提示的高度
+                                                matchContains: true,//是否只要包含文本框里的就可以
+                                                autoFill:false,//自动填充
+                                                mustMatch:true //只会允许匹配的结果出现在输入框
+                                            });
                                         });
-                                    });
-                                </script>
+                                    </script>
+                                </div>
+                                <div class="clear"></div>
                             </div>
-                            <div class="clear"></div>
-                            </p>
-                            <p>
+                            <div class="box_c_item">
                                 <label class="l_title">收货地址：</label>
                                 <input class="text_input w450" type="text" id="delivery_address" placeholder="请输入收货地址">
                                 <script type="text/javascript">
@@ -279,7 +285,8 @@
                                         });
                                     });
                                 </script>
-                            </p>
+                                <div class="clear"></div>
+                            </div>
                         </fieldset>
                     </form>
                     <div class="clear"></div>
@@ -295,35 +302,35 @@
                 <div class="box_c box_c_reset">
                     <table class="table">
                         <thead>
-                        <tr>
-                            <th>产品名称</th>
-                            <th>产品货号</th>
-                            <th>产品规格</th>
-                            <th>发货数量</th>
-                            <th>产品单价（元）</th>
-                            <th>产品金额（元）</th>
-                            <th>备注</th>
-                            <th style="text-align: right">操作</th>
-                        </tr>
+                            <tr>
+                                <th>产品名称</th>
+                                <th>产品货号</th>
+                                <th>产品规格</th>
+                                <th>发货数量</th>
+                                <th>产品单价（元）</th>
+                                <th>产品金额（元）</th>
+                                <th>备注</th>
+                                <th style="text-align: right">操作</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>威顿印务ERP系统</td>
-                            <td>T1223</td>
-                            <td>100g</td>
-                            <td>10</td>
-                            <td>111</td>
-                            <td>1110</td>
-                            <td>备注内容</td>
-                            <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
-                        </tr><!-- 最多7行 -->
+                            <tr>
+                                <td>威顿印务ERP系统</td>
+                                <td>T1223</td>
+                                <td>100g</td>
+                                <td>10</td>
+                                <td>111</td>
+                                <td>1110</td>
+                                <td>备注内容</td>
+                                <td class="text-right"><a href="#">编辑</a> | <a href="#">删除</a></td>
+                            </tr><!-- 最多7行 -->
                         </tbody>
                     </table>
                     <div class="clear"></div>
-                    <p class="fr">
+                    <div class="fr">
                         <label class="l_title"></label>
                         <button class="btn btn_commit" type="button">确认提交</button> &nbsp;<a href="javascript:;" class="btn btn_cancel">取消</a>
-                    </p>
+                    </div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -336,7 +343,7 @@
                 layer.open({
                     type: 2,
                     skin: 'layui-layer-rim', //加上边框
-                    area: ['998px', '420px'], //宽高
+                    area: ['998px', '320px'], //宽高
                     title: false,
                     closeBtn: 1,
                     shadeClose: true,

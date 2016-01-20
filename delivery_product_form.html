@@ -20,32 +20,32 @@
     <fieldset>
         <table class="table">
             <thead>
-            <tr>
-                <th>选择</th>
-                <th>威顿单号</th>
-                <th>产品名称</th>
-                <th>产品货号</th>
-                <th>产品规格</th>
-                <th>库存成品</th>
-            </tr>
+                <tr>
+                    <th>选择</th>
+                    <th>威顿单号</th>
+                    <th>产品名称</th>
+                    <th>产品货号</th>
+                    <th>产品规格</th>
+                    <th>库存成品</th>
+                </tr>
             </thead>
             <tbody>
-            <tr>
-                <td><input type="radio" class="ace" name="chkItem"></td>
-                <td>WP15K081</td>
-                <td>三只松鼠松籽</td>
-                <td>T011</td>
-                <td>500g</td>
-                <td>9999</td>
-            </tr>
-            <tr>
-                <td><input type="radio" class="ace" name="chkItem"></td>
-                <td>WP15K099</td>
-                <td>三只松鼠松籽</td>
-                <td>T012</td>
-                <td>250g</td>
-                <td>9999</td>
-            </tr>
+                <tr>
+                    <td><input type="radio" class="ace" name="chkItem"></td>
+                    <td>WP15K081</td>
+                    <td>三只松鼠松籽</td>
+                    <td>T011</td>
+                    <td>500g</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" class="ace" name="chkItem"></td>
+                    <td>WP15K099</td>
+                    <td>三只松鼠松籽</td>
+                    <td>T012</td>
+                    <td>250g</td>
+                    <td>9999</td>
+                </tr>
             </tbody>
         </table>
     </fieldset>
@@ -53,47 +53,49 @@
 <!--content-->
 <form action="add_delivery_notice.html" method="post">
     <fieldset>
-        <p>
-        <div class="fl">
-            <label class="l_title">产品名称：</label>
-            <input class="text_input w300" type="text" name="corporate_name" id="product_name" placeholder="请输入产品名称并选择(测试输入“三”)">
+        <div class="box_c_item">
+            <div class="fl">
+                <label class="l_title">产品名称：</label>
+                <input class="text_input w300" type="text" name="corporate_name" id="product_name" placeholder="请输入产品名称并选择(测试输入“三”)">
+            </div>
+            <div class="fl">
+                <label class="l_title">产品货号：</label>
+                <input class="text_input w300 fl" type="text" id="product_code" placeholder="" disabled>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="fl">
-            <label class="l_title">产品货号：</label>
-            <input class="text_input w300 fl" type="text" id="product_code" placeholder="" disabled>
+        <div class="box_c_item">
+            <div class="fl">
+                <label class="l_title">产品规格：</label>
+                <input class="text_input w300" type="text" id="product_style" placeholder="" disabled>
+            </div>
+            <div class="fl">
+                <label class="l_title">发货数量：</label>
+                <input class="text_input w300 fl" type="text" id="delivery_num" placeholder="" disabled>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-        </p>
-        <p>
-        <div class="fl">
-            <label class="l_title">产品规格：</label>
-            <input class="text_input w300" type="text" id="product_style" placeholder="" disabled>
+        <div class="box_c_item">
+            <div class="fl">
+                <label class="l_title">产品单价：</label>
+                <input class="text_input w300" type="text" id="product_price" placeholder="" disabled>
+            </div>
+            <div class="fl">
+                <label class="l_title">产品余额：</label>
+                <input class="text_input w300 fl" type="text" id="product_balance" placeholder="" disabled>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="fl">
-            <label class="l_title">发货数量：</label>
-            <input class="text_input w300 fl" type="text" id="delivery_num" placeholder="" disabled>
-        </div>
-        <div class="clear"></div>
-        </p>
-        <p>
-        <div class="fl">
-            <label class="l_title">产品单价：</label>
-            <input class="text_input w300" type="text" id="product_price" placeholder="" disabled>
-        </div>
-        <div class="fl">
-            <label class="l_title">产品余额：</label>
-            <input class="text_input w300 fl" type="text" id="product_balance" placeholder="" disabled>
-        </div>
-        <div class="clear"></div>
-        </p>
-        <p>
+        <div class="box_c_item">
             <label class="l_title">备注：</label>
             <input class="text_input w450" type="text" placeholder="请输入备注">
-        </p>
-        <p>
+            <div class="clear"></div>
+        </div>
+        <div class="box_c_item">
             <label class="l_title"></label>
             <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel">取消</a>
-        </p>
+            <div class="clear"></div>
+        </div>
     </fieldset>
 </form>
 <script type="text/javascript" src="layer/layer.js"></script>

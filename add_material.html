@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
-<body style="position:relative;">
+<body>
 <!--侧栏-->
 <div class="aside">
     <div class="aside_wrapper">
@@ -91,7 +91,7 @@
             </li>
 
             <li class="coin_7">
-                <a href="supplier.html" class="nav_top_item">
+                <a href="add_supplier.html" class="nav_top_item">
                     <em class="icon">&#xe60a;</em>供应商管理
                 </a>
                 <ul class="sub_menu hide" id="ud7">
@@ -103,36 +103,42 @@
             </li>
 
             <li class="coin_8">
-                <a href="#" class="nav_top_item">
+                <a href="add_purchase.html" class="nav_top_item">
                     <em class="icon">&#xe602;</em>采购单
                 </a>
                 <ul class="sub_menu hide" id="ud8">
-                    <li><a href="#">采购单录入</a></li>
-                    <li><a href="#">采购单列表</a></li>
-                    <li><a href="#">采购价格录入</a></li>
+                    <li><a href="add_purchase.html">采购单录入</a></li>
+                    <li><a href="purchase_list.html">采购单列表</a></li>
+                    <li><a href="purchase_price_list.html">采购价格列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_9">
-                <a href="#" class="nav_top_item">
+                <a href="add_warehouse.html" class="nav_top_item">
                     <em class="icon">&#xe609;</em>物控管理
                 </a>
                 <ul class="sub_menu hide" id="ud9">
-                    <li><a href="#">新增仓库</a></li>
-                    <li><a href="#">仓库列表</a></li>
-                    <li><a href="#">仓库调整</a></li>
-                    <li><a href="#">物料领取表录入</a></li>
+                    <li><a href="add_warehouse.html">新增仓库</a></li>
+                    <li><a href="warehouse_list.html">仓库列表</a></li>
+                    <li><a href="add_warehouse_delivery.html">库存录入</a></li>
+                    <li><a href="warehouse_delivery_list.html">库存列表</a></li>
+                    <li><a href="add_material_receiving.html">物料领取表录入</a></li>
+                    <li><a href="material_receiving_list.html">物料领取表列表</a></li>
                 </ul>
             </li>
 
             <li class="coin_10">
-                <a href="#" class="nav_top_item">
+                <a href="add_beginning.html" class="nav_top_item">
                     <em class="icon">&#xe608;</em>财务管理
                 </a>
                 <ul class="sub_menu hide" id="ud10">
-                    <li><a href="#">日报表</a></li>
-                    <li><a href="#">月报表</a></li>
-                    <li><a href="#">年报表</a></li>
+                    <li><a href="add_beginning.html">期初应收录入</a></li>
+                    <li><a href="beginning_list.html">期初应收列表</a></li>
+                    <li><a href="add_received.html">来款登记表录入</a></li>
+                    <li><a href="received_list.html">来款登记表列表</a></li>
+                    <li><a href="add_paid.html">付款登记表录入</a></li>
+                    <li><a href="paid_list.html">付款登记表列表</a></li>
+                    <li><a href="finance_m.html">月报表</a></li>
                 </ul>
             </li>
 
@@ -172,11 +178,12 @@
                 <div class="box_c">
                     <form action="add_material.html" method="post">
                         <fieldset>
-                            <p>
+                            <div class="box_c_item">
                                 <label class="l_title">原材料：</label>
                                 <input class="text_input w300" type="text" name="material_name" placeholder="请输入原材料名称">
-                            </p>
-                            <p>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="box_c_item">
                                 <label class="l_title">供应商：</label>
                                 <input class="text_input w300" type="text" name="supplier_name" id="supplier_name" placeholder="请输入所属供应商名称">
                                 <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
@@ -197,11 +204,13 @@
                                         });
                                     });
                                 </script>
-                            </p>
-                            <p>
-                                <label class="l_title"></label>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="box_c_item">
+                                <label class="l_title">&nbsp;</label>
                                 <button class="btn btn_commit" type="button">保存</button> &nbsp;<a href="javascript:;" class="btn btn_cancel">取消</a>
-                            </p>
+                                <div class="clear"></div>
+                            </div>
                         </fieldset>
                     </form>
                     <div class="clear"></div>
