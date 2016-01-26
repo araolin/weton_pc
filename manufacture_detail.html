@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>威顿印务ERP系统</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="www.kwanson.com">
+    <meta name="version" content="v.1.0.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--侧栏-->
+<div class="aside">
+    <div class="aside_wrapper">
+        <!-- Logo (200px wide) -->
+        <a href="#"><img class="logo" src="images/logo.png" alt="威顿ERP系统" /></a>
+
+        <ul class="main_nav">  <!-- main Menu -->
+            <li class="coin_1">
+                <a href="index.html" class="nav_top_item">
+                    <em class="icon">&#xe60b;</em>系统设置
+                </a>
+                <ul class="sub_menu hide" id="ud1">
+                    <li><a href="profile.html">个人信息</a></li>
+                    <li><a href="change_pwd.html">密码修改</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_2">
+                <a href="users.html" class="nav_top_item" >
+                    <em class="icon">&#xe604;</em>账号管理
+                </a>
+                <ul class="sub_menu hide" id="ud2">
+                    <li><a href="add_dept.html">新增部门</a></li>
+                    <li><a href="dept_list.html">部门列表</a></li>
+                    <li><a href="add_positions.html">新增职位</a></li>
+                    <li><a href="positions_list.html">职位列表</a></li>
+                    <li><a href="add_staff.html">新增员工</a></li>
+                    <li><a href="staff_list.html">员工列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_3">
+                <a href="crm.html" class="nav_top_item">
+                    <em class="icon">&#xe607;</em>客户管理
+                </a>
+                <ul class="sub_menu hide" id="ud3">
+                    <li><a href="add_customer.html">新增客户</a></li>
+                    <li><a href="customer_list.html">客户列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_4">
+                <a href="quotation.html" class="nav_top_item">
+                    <em class="icon">&#xe605;</em>报价单
+                </a>
+                <ul class="sub_menu hide" id="ud4">
+                    <li><a href="add_quotation.html">报价单录入</a></li>
+                    <li><a href="quotation_list.html">报价单列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_5">
+                <a href="manufacture.html" class="nav_top_item">
+                    <em class="icon">&#xe603;</em>生产单
+                </a>
+                <ul class="sub_menu hide" id="ud5">
+                    <li><a href="add_manufacture.html">生产单录入</a></li>
+                    <li><a href="manufacture_list.html">生产单列表</a></li>
+                    <li><a href="add_procedure.html">生产单工序录入</a></li>
+                    <li><a href="procedure_list.html">生产单工序列表</a></li>
+                    <li><a href="add_inventory.html">生产单库存录入</a></li>
+                    <li><a href="inventory_list.html">生产单库存列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_6">
+                <a href="delivery.html" class="nav_top_item">
+                    <em class="icon">&#xe606;</em>发货单
+                </a>
+                <ul class="sub_menu hide" id="ud6">
+                    <li><a href="add_delivery_notice.html">发货通知单录入</a></li>
+                    <li><a href="delivery_notice_list.html">发货通知单列表</a></li>
+                    <li><a href="delivery_list.html">发货单列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_7">
+                <a href="add_supplier.html" class="nav_top_item">
+                    <em class="icon">&#xe60a;</em>供应商管理
+                </a>
+                <ul class="sub_menu hide" id="ud7">
+                    <li><a href="add_supplier.html">新增供应商</a></li>
+                    <li><a href="supplier_list.html">供应商列表</a></li>
+                    <li><a href="add_material.html">新增原材料</a></li>
+                    <li><a href="material_list.html">原材料列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_8">
+                <a href="add_purchase.html" class="nav_top_item">
+                    <em class="icon">&#xe602;</em>采购单
+                </a>
+                <ul class="sub_menu hide" id="ud8">
+                    <li><a href="add_purchase.html">采购单录入</a></li>
+                    <li><a href="purchase_list.html">采购单列表</a></li>
+                    <li><a href="purchase_price_list.html">采购价格列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_9">
+                <a href="add_warehouse.html" class="nav_top_item">
+                    <em class="icon">&#xe609;</em>物控管理
+                </a>
+                <ul class="sub_menu hide" id="ud9">
+                    <li><a href="add_warehouse.html">新增仓库</a></li>
+                    <li><a href="warehouse_list.html">仓库列表</a></li>
+                    <li><a href="add_warehouse_delivery.html">库存录入</a></li>
+                    <li><a href="warehouse_delivery_list.html">库存列表</a></li>
+                    <li><a href="add_material_receiving.html">物料领取表录入</a></li>
+                    <li><a href="material_receiving_list.html">物料领取表列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_10">
+                <a href="add_beginning.html" class="nav_top_item">
+                    <em class="icon">&#xe608;</em>财务管理
+                </a>
+                <ul class="sub_menu hide" id="ud10">
+                    <li><a href="add_beginning.html">期初应收录入</a></li>
+                    <li><a href="beginning_list.html">期初应收列表</a></li>
+                    <li><a href="add_received.html">来款登记表录入</a></li>
+                    <li><a href="received_list.html">来款登记表列表</a></li>
+                    <li><a href="add_paid.html">付款登记表录入</a></li>
+                    <li><a href="paid_list.html">付款登记表列表</a></li>
+                    <li><a href="finance_m.html">月报表</a></li>
+                </ul>
+            </li>
+
+        </ul> <!-- End #main-nav -->
+    </div>
+</div>
+<!--END 侧栏-->
+<!-- main -->
+<div class="main">
+    <!--顶部top_bar-->
+    <div class="top_bar">
+        <div class="top_bar_inner fr">
+            <div class="logout">
+                <a href="javascript:;" title="退出">
+                    <i class="icon">&#xe60c;</i>
+                    退出
+                </a>
+            </div>
+            <div class="welcome">
+                <span class="fr">业务部 隔壁老王</span>
+                <img class="fr" src="images/avatar.jpg" alt="隔壁老王" />
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--END 顶部top_bar-->
+
+    <!--content-->
+    <div class="content">
+        <!--生产单详情-->
+        <div class="manufacture_detail">
+            <div class="box">
+                <div class="box_t">
+                    <h3>生产单详情</h3>
+                </div>
+                <div class="box_c fl" style="width: 600px;">
+                    <fieldset>
+                        <div class="box_c_item">
+                            <label class="l_title">公司名称：</label>
+                            <span class="l_con w300">广东君森科技有限公司</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">客订单号：</label>
+                            <span class="l_con w300">JS1233L5555</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">产品货号：</label>
+                            <span class="l_con w300">KKKK334456</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">威顿单号：</label>
+                            <span class="l_con w300">WE112445</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">订单数量：</label>
+                            <span class="l_con w150">555</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">可接受浮动订单量：</label>
+                                <span class="l_con l_t_mid w40"><i class="icon">&#xe627;</i></span>
+                                <span class="l_con w40 fl">555</span>
+                                <span class="l_con l_t_mid w40"><i class="icon">&#xe628;</i></span>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="fl">
+                                <div class="w40 fl">&nbsp;</div>
+                                <span class="l_con l_t_mid w40"><i class="icon">&#xe626;</i></span>
+                                <span class="l_con w40 fl">555</span>
+                                <span class="l_con l_t_mid w40"><i class="icon">&#xe628;</i></span>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">下单日期：</label>
+                            <span class="l_con w150">2016/01/22</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">交货日期：</label>
+                            <span class="l_con w150">2016/01/22</span>
+                            <div class="clear"></div>
+                        </div>
+                        <!-- END content -->
+                        <div class="box_c_item">
+                            <label class="l_title">交货地点：</label>
+                            <span class="l_con w300">啦啦啦啦</span>
+                            <div class="clear"></div>
+                        </div>
+                    </fieldset>
+                    <div class="clear"></div>
+                </div>
+                <div class="box_c fl" style="width: 450px;">
+                    <!--<div class="add_product_img">-->
+                    <!--<i class="icon">&#xe629;</i>-->
+                    <!--<p>添加产品图片</p>-->
+                    <!--</div>-->
+                    <div class="product_img_show">
+                        <a href="images/big.jpg" class="zoom" title="MYTITLE">
+                            <img src="images/small.jpg" alt="产品图"/>
+                        </a>
+                    </div>
+                    <link rel="stylesheet" type="text/css" href="css/jqzoom.css">
+                    <script type='text/javascript' src='js/jqzoom.pack.1.0.1.js'></script>
+                    <script type="text/javascript">
+
+
+                        $(function(){
+
+                            var setting={zoomType:"reverse",
+
+                                zoomWidth:200,
+
+                                zoomHeight:200,
+
+                                xOffset:20,
+
+                                yOffset:20,
+
+                                lens:true,
+
+                                title:true,
+
+                                imageOpacity:0.5
+
+                            };
+
+                            $(".zoom").jqzoom();
+
+                        });
+
+                    </script>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="box" id="tabs_box">
+                <div class="box_t">
+                    <div class="tabs">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" id="tab_1" class="hover">
+                                    样板资料
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_2">
+                                    原材料及尺寸要求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_3">
+                                    菲林及印刷要求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_4">
+                                    工序要求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_5">
+                                    包装要求
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="tab_6">
+                                    生产备注
+                                </a>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_c" id="tab_c_1">
+                    <fieldset>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">生产样板：</label>
+                                <span class="l_con w300">1111</span><span class="l_con l_t_mid w40">个</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">稿件：</label>
+                                <span class="l_con w300">1111</span><span class="l_con l_t_mid w40">件</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">客签OK办：</label>
+                                <span class="l_con w300">1111</span><span class="l_con l_t_mid w40">个</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">实物：</label>
+                                <span class="l_con w300">1111</span><span class="l_con l_t_mid w40">个</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">来办：</label>
+                                <span class="l_con w300">1111</span><span class="l_con l_t_mid w40">个</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_2">
+                    <fieldset>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">卡号：</label>
+                                <span class="l_con w300">111ee1222</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">成品尺寸：</label>
+                                <span class="l_con w300">1111*111</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">卡种：</label>
+                                <span class="l_con w300">1133</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">成品盒数：</label>
+                                <span class="l_con w300">111221</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">存货：</label>
+                                <span class="l_con w300">1111</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_3">
+                    <fieldset>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">印面/印里：</label>
+                                <span class="l_con w150">印面</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">印刷颜色按照：</label>
+                                <span class="l_con w300">1111</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">偏通色号：</label>
+                                <span class="l_con w300">1111</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">印刷尺寸按照：</label>
+                                <span class="l_con w300">1111</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">菲林用/档案名称：</label>
+                                <span class="l_con w300">1111</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">印刷文图按照：</label>
+                                <span class="l_con w300">1111</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">电脑纹：</label>
+                                <span class="l_con w300">1111</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">模用：</label>
+                                <span class="l_con w150">1111</span>
+                                <span class="l_con w300">1111</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_4">
+                    <fieldset>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>工序名称</th>
+                                    <th>备注</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>柯式</td>
+                                    <td><span class="l_con w400">印刷A</span></td>
+                                </tr>
+                                <tr>
+                                    <td>烫金</td>
+                                    <td><span class="l_con w400">706</span></td>
+                                </tr>
+                                <tr>
+                                    <td>单线</td>
+                                    <td><span class="l_con w400">精细线</span></td>
+                                </tr>
+                                <tr>
+                                    <td>粘盒</td>
+                                    <td><span class="l_con w400">药水</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="box_c_item">
+                            <span class="l_con">工序要求：开料-柯式（印刷A）-烫金（706）-单线（精细线）-粘盒（药水）</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_5">
+                    <fieldset>
+                        <div class="box_c_item">
+                            <div class="fl">
+                                <label class="l_title">用于食品包装：</label>
+                                <span class="l_con w150">是</span>
+                            </div>
+                            <div class="fl">
+                                <label class="l_title">俐仔位：</label>
+                                <span class="l_con w150">粘里</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">包装：</label>
+                            <span class="radio_inner w150 fl">
+                                包装方式一：
+                            </span>
+                            <span class="l_con w80">1111</span>
+                            <span class="l_con l_t_mid w80">个/扎，</span>
+                            <span class="l_con w80">1111</span>
+                            <span class="l_con l_t_mid w80">条带，</span>
+                            <span class="l_con w80">1111</span>
+                            <span class="l_con l_t_mid w150">扎收缩，纸质</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">包装：</label>
+                            <span class="radio_inner w150 fl">
+                                包装方式二：
+                            </span>
+                            <span class="l_con l_t_mid w80">每个卷带</span>
+                            <span class="l_con w80">1111</span>
+                            <span class="l_con l_t_mid w80">个/扎</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box_c_item">
+                            <label class="l_title">包装：</label>
+                            <span class="radio_inner w150 fl">
+                                其他：
+                            </span>
+                            <span class="l_con w80">1111</span>
+                            <div class="clear"></div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="box_c hide" id="tab_c_6">
+                    <fieldset>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>生产备注：</th>
+                                <th colspan="2">*&nbsp;留意色牢度需用能通过胶纸测试。</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>*&nbsp;开料</td>
+                                <td colspan="2">材料要摆平放平整，不要荷叶边，堆放高度不超过1m<br/>要做表面处理，片材达因值38以上，印刷前48H要开料，请小心片花及霉点</td>
+                            </tr>
+                            <tr>
+                                <td>*&nbsp;印刷</td>
+                                <td colspan="2">用3M810胶纸进行油墨附着力测试，印刷后片材堆放高度不能超过1m<br/>要够白，一定要清洁好车头才能印白色<br/>电脑纹必须经过测试，能读过C级以上才可以出货，请小心片花及霉点
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>烫</td>
+                                <td> *&nbsp;热烫 电版用：新电版银纸用指定型号不得有任何变更<br/>*&nbsp;不允许有发白块状现象<br/>*&nbsp;粘银不允许，烫银机器要干净，环境要符合要求<br/>*&nbsp;注意烫金牢度、用3M胶纸测试烫金附着力</td>
+                                <td> *&nbsp;烫套位误差≦0.2MM<br/>*&nbsp;不可发生漏烫、掉银粉<br/>*&nbsp;边缘要直线，无毛边或残缺，狗牙</td>
+                            </tr>
+                            <tr>
+                                <td>啤</td>
+                                <td> *&nbsp;啤双线，线条柔软度为4星<br/>*&nbsp;压力要适当,撕片得以顺畅<br/>*&nbsp;注意爆线、刀线错位、毛刺、压印、片花、霉点等不良</td>
+                                <td> *&nbsp;啤刀要锋利，不能有毛边<br/>*&nbsp;啤线要平整,套位要准确</td>
+                            </tr>
+                            <tr>
+                                <td>粘</td>
+                                <td> *&nbsp;机拖要控制好出片速度，请注意连张；电眼感应（胶盒之间的间距要≧5.0cm<br/>*&nbsp;胶水要均匀，要直， 不能有拉丝粘连<br/>*&nbsp;注意刮花,要轻拿轻放</td>
+                                <td> *&nbsp;不能有漏胶、漏粘胶、短胶；胶尽量打到头，俐仔两头空位≦2mm<br/>*&nbsp;注意胶水牢度，用拉力计检测，达4磅或以上为合格</td>
+                            </tr>
+                            <tr>
+                                <td>其他备注</td>
+                                <td colspan="2"><span class="l_con w300">其他备注内容</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="clear"></div>
+                    </fieldset>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $("#tabs_box .tabs li").click(function(){
+                    $("#tabs_box .tabs li a").removeClass("hover");
+                    $(this).find("a").addClass("hover");
+                    $("#tabs_box .box_c").hide();
+                    var tabs_index = "#tab_c_"+($(this).index()+1);
+                    $(tabs_index).show();
+                })
+                $(" .next_tab").click(function(){
+                    $("#tabs_box .tabs li a").removeClass("hover");
+                    var next_index = $(this).parent().parent().parent().index()+1;
+                    $("#tab_"+next_index).addClass("hover");
+                    $("#tabs_box .box_c").hide();
+                    $("#tab_c_"+next_index).show();
+                })
+            </script>
+        </div>
+        <!--END 生产单详情-->
+    </div>
+    <!--END content-->
+</div>
+<!-- END main -->
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript">
+    $(function () {
+        menu1("#ud5", "#ud5 a", ".coin_5 a.nav_top_item");
+    })
+</script>
+
+</body>
+</html>
