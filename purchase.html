@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>威顿印务ERP系统</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <meta name="keywords" content=" " />
+    <meta name="description" content=" " />
+    <meta name="author" content="www.kwanson.com">
+    <meta name="version" content="v.1.0.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--侧栏-->
+<div class="aside">
+    <div class="aside_wrapper">
+        <!-- Logo (200px wide) -->
+        <a href="#"><img class="logo" src="images/logo.png" alt="威顿ERP系统" /></a>
+
+        <ul class="main_nav">  <!-- main Menu -->
+            <li class="coin_1">
+                <a href="index.html" class="nav_top_item">
+                    <em class="icon">&#xe60b;</em>系统设置
+                </a>
+                <ul class="sub_menu hide" id="ud1">
+                    <li><a href="profile.html">个人信息</a></li>
+                    <li><a href="change_pwd.html">密码修改</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_2">
+                <a href="users.html" class="nav_top_item" >
+                    <em class="icon">&#xe604;</em>账号管理
+                </a>
+                <ul class="sub_menu hide" id="ud2">
+                    <li><a href="add_dept.html">新增部门</a></li>
+                    <li><a href="dept_list.html">部门列表</a></li>
+                    <li><a href="add_positions.html">新增职位</a></li>
+                    <li><a href="positions_list.html">职位列表</a></li>
+                    <li><a href="add_staff.html">新增员工</a></li>
+                    <li><a href="staff_list.html">员工列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_3">
+                <a href="crm.html" class="nav_top_item">
+                    <em class="icon">&#xe607;</em>客户管理
+                </a>
+                <ul class="sub_menu hide" id="ud3">
+                    <li><a href="add_customer.html">新增客户</a></li>
+                    <li><a href="customer_list.html">客户列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_4">
+                <a href="quotation.html" class="nav_top_item">
+                    <em class="icon">&#xe605;</em>报价单
+                </a>
+                <ul class="sub_menu hide" id="ud4">
+                    <li><a href="add_quotation.html">报价单录入</a></li>
+                    <li><a href="quotation_list.html">报价单列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_5">
+                <a href="manufacture.html" class="nav_top_item">
+                    <em class="icon">&#xe603;</em>生产单
+                </a>
+                <ul class="sub_menu hide" id="ud5">
+                    <li><a href="add_manufacture.html">生产单录入</a></li>
+                    <li><a href="manufacture_list.html">生产单列表</a></li>
+                    <li><a href="add_procedure.html">生产单工序录入</a></li>
+                    <li><a href="procedure_list.html">生产单工序列表</a></li>
+                    <li><a href="add_inventory.html">生产单库存录入</a></li>
+                    <li><a href="inventory_list.html">生产单库存列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_6">
+                <a href="delivery.html" class="nav_top_item">
+                    <em class="icon">&#xe606;</em>发货单
+                </a>
+                <ul class="sub_menu hide" id="ud6">
+                    <li><a href="add_delivery_notice.html">发货通知单录入</a></li>
+                    <li><a href="delivery_notice_list.html">发货通知单列表</a></li>
+                    <li><a href="delivery_list.html">发货单列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_7">
+                <a href="add_supplier.html" class="nav_top_item">
+                    <em class="icon">&#xe60a;</em>供应商管理
+                </a>
+                <ul class="sub_menu hide" id="ud7">
+                    <li><a href="add_supplier.html">新增供应商</a></li>
+                    <li><a href="supplier_list.html">供应商列表</a></li>
+                    <li><a href="add_material.html">新增原材料</a></li>
+                    <li><a href="material_list.html">原材料列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_8">
+                <a href="add_purchase.html" class="nav_top_item">
+                    <em class="icon">&#xe602;</em>采购单
+                </a>
+                <ul class="sub_menu hide" id="ud8">
+                    <li><a href="add_purchase.html">采购单录入</a></li>
+                    <li><a href="purchase_list.html">采购单列表</a></li>
+                    <li><a href="purchase_price_list.html">采购价格列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_9">
+                <a href="add_warehouse.html" class="nav_top_item">
+                    <em class="icon">&#xe609;</em>物控管理
+                </a>
+                <ul class="sub_menu hide" id="ud9">
+                    <li><a href="add_warehouse.html">新增仓库</a></li>
+                    <li><a href="warehouse_list.html">仓库列表</a></li>
+                    <li><a href="add_warehouse_delivery.html">库存录入</a></li>
+                    <li><a href="warehouse_delivery_list.html">库存列表</a></li>
+                    <li><a href="add_material_receiving.html">物料领取表录入</a></li>
+                    <li><a href="material_receiving_list.html">物料领取表列表</a></li>
+                </ul>
+            </li>
+
+            <li class="coin_10">
+                <a href="add_beginning.html" class="nav_top_item">
+                    <em class="icon">&#xe608;</em>财务管理
+                </a>
+                <ul class="sub_menu hide" id="ud10">
+                    <li><a href="add_beginning.html">期初应收录入</a></li>
+                    <li><a href="beginning_list.html">期初应收列表</a></li>
+                    <li><a href="add_received.html">来款登记表录入</a></li>
+                    <li><a href="received_list.html">来款登记表列表</a></li>
+                    <li><a href="add_paid.html">付款登记表录入</a></li>
+                    <li><a href="paid_list.html">付款登记表列表</a></li>
+                    <li><a href="finance_m.html">月报表</a></li>
+                </ul>
+            </li>
+
+        </ul> <!-- End #main-nav -->
+    </div>
+</div>
+<!--END 侧栏-->
+<!-- main -->
+<div class="main">
+    <!--顶部top_bar-->
+    <div class="top_bar">
+        <div class="top_bar_inner fr">
+            <div class="logout">
+                <a href="javascript:;" title="退出">
+                    <i class="icon">&#xe60c;</i>
+                    退出
+                </a>
+            </div>
+            <div class="welcome">
+                <span class="fr">业务部 隔壁老王</span>
+                <img class="fr" src="images/avatar.jpg" alt="隔壁老王" />
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--END 顶部top_bar-->
+
+    <!--content-->
+    <div class="content">
+        <!--采购单-->
+        <div class="purchase users">
+            <div class="box">
+                <div class="users-item">
+                    <a href="#" title="采购单录入"><i class="icon">&#xe63c;</i></a>
+                    <p>采购单录入</p>
+                </div>
+                <div class="users-arrow">
+                    <i class="icon">&#xe625;</i>
+                </div>
+                <div class="users-item">
+                    <a href="#" title="采购单列表"><i class="icon">&#xe63e;</i></a>
+                    <p>采购单列表</p>
+                </div>
+                <div class="users-arrow">
+                    <i class="icon">&#xe625;</i>
+                </div>
+                <div class="users-item">
+                    <a href="#" title="采购价格列表"><i class="icon">&#xe63a;</i></a>
+                    <p>采购价格列表</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!--END 采购单-->
+    </div>
+    <!--END content-->
+</div>
+<!-- END main -->
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript">
+    $(function () {
+        menu1("#ud8", "#ud8 a", ".coin_8 a.nav_top_item");
+    })
+</script>
+
+</body>
+</html>
