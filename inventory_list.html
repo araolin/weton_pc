@@ -181,24 +181,41 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="box_c box_c_reset table_scroll">
-                    <table class="table">
-                        <thead>
+                <div class="box_c box_c_reset table_scroll" style="overflow-x: hidden;">
+                    <div class="table_l fl" style="width: 40%;overflow-x: scroll">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" class="ace">全选</th>
+                                    <th>威顿单号</th>
+                                    <th>公司名称</th>
+                                    <th>客订单号</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr title="WP150K084/广州君森科技有限公司/ERP系统">
+                                    <td><input type="checkbox" class="ace"></td>
+                                    <td>WP150K084</td>
+                                    <td>广州君森科技有限公司</td>
+                                    <td>ERP系统</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fl" style="width: 59.5%;overflow-x: scroll">
+                        <table class="table">
+                            <thead>
                             <tr>
-                                <th><input type="checkbox" class="ace">全选</th>
-                                <th>威顿单号</th>
-                                <th>公司名称</th>
-                                <th>客订单号</th>
                                 <th>
                                     <table class="th_table">
                                         <thead>
-                                            <tr>
-                                                <th colspan="2">开料</th>
-                                            </tr>
-                                            <tr>
-                                                <th>良品</th>
-                                                <th>次品</th>
-                                            </tr>
+                                        <tr>
+                                            <th colspan="2">开料</th>
+                                        </tr>
+                                        <tr>
+                                            <th>良品</th>
+                                            <th>次品</th>
+                                        </tr>
                                         </thead>
                                     </table>
                                 </th>
@@ -347,20 +364,16 @@
                                 </th>
                                 <th class="text-right">操作</th>
                             </tr>
-                        </thead>
-                        <tbody>
+                            </thead>
+                            <tbody>
                             <tr title="WP150K084/广州君森科技有限公司/ERP系统">
-                                <td><input type="checkbox" class="ace"></td>
-                                <td>WP150K084</td>
-                                <td>广州君森科技有限公司</td>
-                                <td>ERP系统</td>
                                 <td>
                                     <table class="td_table">
                                         <tbody>
-                                            <tr>
-                                                <td>11</td>
-                                                <td>222</td>
-                                            </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>222</td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </td>
@@ -476,8 +489,10 @@
                                 </td>
                                 <td class="text-right" rowspan="3"><a href="javascript:;" id="edit_inventory_button">编辑</a> | <a href="#">删除</a></td>
                             </tr>
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="clear"></div>
                     <div class="table_scroll_button">
                         <input type="checkbox" class="ace">全选
                         <a href="javascript:;" class="btn btn_cancel">删除</a>
